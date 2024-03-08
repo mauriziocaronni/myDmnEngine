@@ -1,0 +1,8 @@
+contraente/assicurato modificato in contraente o assicurato
+[150000] modificato in [0..150000]
+input Tipo di Incarico modificato in TipoDiIncarico
+input Portale di Provenienza modficato in PortaleDiProvenienza
+Riseva e Authority modificati da string in long 
+i campi in output vuoti modificati da "-" a " " (blank)
+
+
