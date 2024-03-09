@@ -54,3 +54,4 @@
 /Users/mauriziocaronni/Projects/DMNengine/bin/Debug/net8.0/System.Windows.Extensions.dll
 /Users/mauriziocaronni/Projects/DMNengine/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
 /Users/mauriziocaronni/Projects/DMNengine/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+/Users/mauriziocaronni/Projects/DmnEngine/obj/Debug/net8.0/DMNengine.sourcelink.json

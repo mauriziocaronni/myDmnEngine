@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DMNengine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e0f5d37d3280d2f8bb97203b5419b8b77f27cb7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3d3c21639062b41664eee1348e1fd33fa94ae76")]
 [assembly: System.Reflection.AssemblyProductAttribute("DMNengine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DMNengine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

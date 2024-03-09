@@ -31,6 +31,7 @@ namespace MyDmnEngine
                     MyDmn.LogMessage(debug,"processing " + fileName);
                     MyDmn.CheckDmnSyntax(debug,fileName);
 
+                    MyDmn.SaveDmnXlsx(debug,fileName);
 
                     // verifico presenza testScenario
                     string filePathNameTestScenario = pathDmnTest +"/" + Path.GetFileNameWithoutExtension(fileName) + "_test.xlsx";

@@ -310,5 +310,99 @@ namespace MyDmnEngine
             }
         }    
 
-    }
+    
+
+        public static List<List<string>> GetDmnRules (Boolean debug, string fileName)
+        {
+            var ruleTable = new List<List<string>>();
+            var ruleList = new List<string>();
+            var inputList = new List<string>();
+            var outputList = new List<string>();
+
+            try
+            {
+                var doc = XDocument.Load(fileName);
+                XNamespace ns = "https://www.omg.org/spec/DMN/20191111/MODEL/";
+
+                var decisionTable = doc.Descendants(ns + "decisionTable").FirstOrDefault();
+                if (decisionTable != null)
+                {
+                    var rules = decisionTable.Descendants(ns + "rule");
+                    foreach (var rule in rules)
+                    {
+                    inputList.Clear();
+                    outputList.Clear();
+                    foreach (var input in rule.Descendants(ns + "inputEntry"))
+                    {
+                        var inputText = input.Descendants(ns + "text").FirstOrDefault();
+                        inputList.Add(inputText.Value);
+                    }
+
+                    foreach (var output in rule.Descendants(ns + "outputEntry"))
+                    {
+                        var outputText = output.Descendants(ns + "text").FirstOrDefault();
+                        outputList.Add(outputText.Value);
+                    }
+                    ruleList = inputList.Concat(outputList).ToList();
+                    ruleTable.Add(ruleList);
+                    }
+                }
+            return ruleTable;
+            }
+            catch (Exception e)
+            {
+                throw new DmnException("GetDmnRules error: " + e.Message, e);
+            }
+        }
+
+        public static void SaveDmnXlsx(Boolean debug, string fileName)
+        {
+            try
+            {
+
+                var ruleTable = new List<List<string>>();
+                var inputList = MyDmn.GetDmnInputs(false,fileName);
+                var outputList = MyDmn.GetDmnOutputs(false, fileName);
+
+                ruleTable = MyDmn.GetDmnRules(debug, fileName);
+
+                var workbook = new XSSFWorkbook();
+                var sheet = workbook.CreateSheet("DMN Rules");
+                var row = 0;
+                var cell = 0;
+                var headerRow = sheet.CreateRow(row);
+                foreach (var input in inputList)
+                {
+                    headerRow.CreateCell(cell).SetCellValue(input);
+                    cell++;
+                }
+                foreach (var output in outputList)
+                {
+                    headerRow.CreateCell(cell).SetCellValue(output);
+                    cell++;
+                }
+                row++;
+                foreach (var rule in ruleTable)
+                {
+                    cell = 0;
+                    var dataRow = sheet.CreateRow(row);
+                    foreach (var item in rule)
+                    {
+                        dataRow.CreateCell(cell).SetCellValue(item);
+                        cell++;
+                    }
+                    row++;
+                }
+                string ruleFileName = fileName.Replace(".dmn", "_rules.xlsx");
+                using (var fileData = new FileStream(ruleFileName, FileMode.Create))
+                {
+                    workbook.Write(fileData);
+                }
+            }
+            catch (Exception e)
+            {
+                throw new DmnException("SaveDmnXlsx error: " + e.Message, e);
+            }
+        }
+    }        
 }
