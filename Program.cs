@@ -47,9 +47,8 @@ namespace MyDmnEngine
                         MyDmn.LogMessage(debug,"imposto dati input generici  ");
                         MyDmn.ExecuteDmnGenericTest(debug,fileName);
                     }
-
                 }        
-            }
+           }
             catch (Exception e)
                 {
                     MyDmn.LogMessage(debug,"error: " + e.Message);

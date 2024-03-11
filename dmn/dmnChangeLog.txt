@@ -5,4 +5,8 @@ input Portale di Provenienza modficato in PortaleDiProvenienza
 Riseva e Authority modificati da string in long 
 i campi in output vuoti modificati da "-" a " " (blank)
 
+in output Agenzia esclusiva, amministratore esclusivo e ass-contr esclusivo messi nel formato "Elem1#Elem2"
+output user 90,91,92,93,97,98,99,100 eliminato ; finale (Es. michela.danza@aeaitalia.com;)
+
+
 

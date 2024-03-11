@@ -405,7 +405,7 @@
           <ns0:text></ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_29r60im">
-          <ns0:text>"aqui terme","assiteca"</ns0:text>
+          <ns0:text>"aqui terme#assiteca"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_3fv4ge1">
           <ns0:text></ns0:text>
@@ -471,7 +471,7 @@
           <ns0:text>"GEN"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_2ar35a5">
-          <ns0:text>"aqui terme","assiteca"</ns0:text>
+          <ns0:text>"aqui terme#assiteca"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_343dqkl">
           <ns0:text></ns0:text>
@@ -999,7 +999,7 @@
           <ns0:text></ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_3829dm3">
-          <ns0:text>"257 corso italia", "253 dogana", "251 san gottardo"</ns0:text>
+          <ns0:text>"257 corso italia#253 dogana#251 san gottardo"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_3hq7m6a">
           <ns0:text></ns0:text>
@@ -2913,7 +2913,7 @@
           <ns0:text></ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_1b19qdq">
-          <ns0:text>"Agenzia Generali TF3 Lecco Piazza Degli Affari", "Agenzia Generali 140 Pontedera"</ns0:text>
+          <ns0:text>"Agenzia Generali TF3 Lecco Piazza Degli Affari#Agenzia Generali 140 Pontedera"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_000cugb">
           <ns0:text></ns0:text>
@@ -3639,7 +3639,7 @@
           <ns0:text></ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_0i1v49s">
-          <ns0:text>"Agenzia Generali Varese 050", "Agenzia Generali T5P Milano Washington"</ns0:text>
+          <ns0:text>"Agenzia Generali Varese 050#Agenzia Generali T5P Milano Washington"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_2bmv5he">
           <ns0:text></ns0:text>
@@ -3837,7 +3837,7 @@
           <ns0:text></ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_0bamv8u">
-          <ns0:text>"Agenzia Generali di Bernareggio RKE", "Agenzia Cattolica BERNAREGGIO MILANO 001049", "Agenzia Cattolica Vercelli 000665 "</ns0:text>
+          <ns0:text>"Agenzia Generali di Bernareggio RKE#Agenzia Cattolica BERNAREGGIO MILANO 001049#Agenzia Cattolica Vercelli 000665 "</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_1ht7bcs">
           <ns0:text></ns0:text>
@@ -3903,7 +3903,7 @@
           <ns0:text></ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_2349ipq">
-          <ns0:text>"Agenzia Generali Monza I53","Agenzia Generali di Bernareggio RKE", "Agenzia Cattolica BERNAREGGIO MILANO 001049"</ns0:text>
+          <ns0:text>"Agenzia Generali Monza I53#Agenzia Generali di Bernareggio RKE#Agenzia Cattolica BERNAREGGIO MILANO 001049"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_16o5uf8">
           <ns0:text></ns0:text>
@@ -3951,7 +3951,7 @@
           <ns0:text>-</ns0:text>
         </ns0:inputEntry>
         <ns0:inputEntry id="InputEntry_1o5hkhv">
-          <ns0:text>"Ferraro Amministrazioni", "COIMA REM"</ns0:text>
+          <ns0:text>"Ferraro Amministrazioni#COIMA REM"</ns0:text>
         </ns0:inputEntry>
         <ns0:inputEntry id="InputEntry_1jlkn8v">
           <ns0:text>-</ns0:text>
@@ -3969,11 +3969,11 @@
           <ns0:text></ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_3vo6s78">
-          <ns0:text>"Agenzia Generali T5U Milano Sant Ambrogio", "
-Agenzia Generali TF5 Legnano Xxv Aprile", "Agenzia Generali Cantù 090", "Agenzia Generali Mariano Comense 310", "Agenzia Generali T51 Busto Arsizio Piazza Trento E Trieste"</ns0:text>
+          <ns0:text>"Agenzia Generali T5U Milano Sant Ambrogio#
+Agenzia Generali TF5 Legnano Xxv Aprile#Agenzia Generali Cantù 090#Agenzia Generali Mariano Comense 310#Agenzia Generali T51 Busto Arsizio Piazza Trento E Trieste"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_06cco3e">
-          <ns0:text>"Ferraro Amministrazioni", "COIMA REM"</ns0:text>
+          <ns0:text>"Ferraro Amministrazioni#COIMA REM"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_3fe67j0">
           <ns0:text></ns0:text>
@@ -4234,7 +4234,7 @@ Agenzia Generali TF5 Legnano Xxv Aprile", "Agenzia Generali Cantù 090", "Agenzi
           <ns0:text></ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_1ui7ipi">
-          <ns0:text>"Agenzia Generali IH4 Darfo Boario Terme Manifattura", "Agenzia Generali T2T Darfo Boario Terme Corso Italia"</ns0:text>
+          <ns0:text>"Agenzia Generali IH4 Darfo Boario Terme Manifattura#Agenzia Generali T2T Darfo Boario Terme Corso Italia"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_3lok47e">
           <ns0:text></ns0:text>
@@ -4564,7 +4564,7 @@ Agenzia Generali TF5 Legnano Xxv Aprile", "Agenzia Generali Cantù 090", "Agenzi
           <ns0:text></ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_1kil96t">
-          <ns0:text>"Agenzia Generali Vigevano I13","Agenzia Generali A78 Triumplina", "Agenzia Generali IW5 Piombino Via Spalato","Agenzia Generali I15 Biella Via Pietro Micca", "Agenzia Generali 733 Biella Via Carso"</ns0:text>
+          <ns0:text>"Agenzia Generali Vigevano I13#Agenzia Generali A78 Triumplina#Agenzia Generali IW5 Piombino Via Spalato#Agenzia Generali I15 Biella Via Pietro Micca#Agenzia Generali 733 Biella Via Carso"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_3a9cmsd">
           <ns0:text></ns0:text>
@@ -6076,7 +6076,7 @@ Agenzia Generali TF5 Legnano Xxv Aprile", "Agenzia Generali Cantù 090", "Agenzi
           <ns0:text>-</ns0:text>
         </ns0:inputEntry>
         <ns0:outputEntry id="OutputEntry_36298s7">
-          <ns0:text>"michela.danza@aeaitalia.com; "</ns0:text>
+          <ns0:text>"michela.danza@aeaitalia.com"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_2n3k68q">
           <ns0:text></ns0:text>
@@ -6142,7 +6142,7 @@ Agenzia Generali TF5 Legnano Xxv Aprile", "Agenzia Generali Cantù 090", "Agenzi
           <ns0:text>-</ns0:text>
         </ns0:inputEntry>
         <ns0:outputEntry id="OutputEntry_1qseftj">
-          <ns0:text>"auroraattardi@aeaitalia.com; "</ns0:text>
+          <ns0:text>"auroraattardi@aeaitalia.com"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_2cknurj">
           <ns0:text></ns0:text>
@@ -6208,7 +6208,7 @@ Agenzia Generali TF5 Legnano Xxv Aprile", "Agenzia Generali Cantù 090", "Agenzi
           <ns0:text>-</ns0:text>
         </ns0:inputEntry>
         <ns0:outputEntry id="OutputEntry_1q65dr8">
-          <ns0:text>"luca.mastrototaro@aeaitalia.com; "</ns0:text>
+          <ns0:text>"luca.mastrototaro@aeaitalia.com"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_24p6u6h">
           <ns0:text></ns0:text>
@@ -6274,7 +6274,7 @@ Agenzia Generali TF5 Legnano Xxv Aprile", "Agenzia Generali Cantù 090", "Agenzi
           <ns0:text>-</ns0:text>
         </ns0:inputEntry>
         <ns0:outputEntry id="OutputEntry_0poie8j">
-          <ns0:text>"fabrizio.barbieri@EXPERTAitalia.com; "</ns0:text>
+          <ns0:text>"fabrizio.barbieri@EXPERTAitalia.com"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_2onqntc">
           <ns0:text></ns0:text>
@@ -6538,7 +6538,7 @@ Agenzia Generali TF5 Legnano Xxv Aprile", "Agenzia Generali Cantù 090", "Agenzi
           <ns0:text>-</ns0:text>
         </ns0:inputEntry>
         <ns0:outputEntry id="OutputEntry_2r78r8c">
-          <ns0:text>"michela.danza@aeaitalia.com; "</ns0:text>
+          <ns0:text>"michela.danza@aeaitalia.com"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_1kqq73u">
           <ns0:text></ns0:text>
@@ -6604,7 +6604,7 @@ Agenzia Generali TF5 Legnano Xxv Aprile", "Agenzia Generali Cantù 090", "Agenzi
           <ns0:text>-</ns0:text>
         </ns0:inputEntry>
         <ns0:outputEntry id="OutputEntry_2883bmg">
-          <ns0:text>"auroraattardi@aeaitalia.com; "</ns0:text>
+          <ns0:text>"auroraattardi@aeaitalia.com"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_0sr12g1">
           <ns0:text></ns0:text>
@@ -6670,7 +6670,7 @@ Agenzia Generali TF5 Legnano Xxv Aprile", "Agenzia Generali Cantù 090", "Agenzi
           <ns0:text>-</ns0:text>
         </ns0:inputEntry>
         <ns0:outputEntry id="OutputEntry_14ejlld">
-          <ns0:text>"luca.mastrototaro@aeaitalia.com; "</ns0:text>
+          <ns0:text>"luca.mastrototaro@aeaitalia.com"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_3o66141">
           <ns0:text></ns0:text>
@@ -6736,7 +6736,7 @@ Agenzia Generali TF5 Legnano Xxv Aprile", "Agenzia Generali Cantù 090", "Agenzi
           <ns0:text>-</ns0:text>
         </ns0:inputEntry>
         <ns0:outputEntry id="OutputEntry_1asg3mt">
-          <ns0:text>"fabrizio.barbieri@EXPERTAitalia.com; "</ns0:text>
+          <ns0:text>"fabrizio.barbieri@EXPERTAitalia.com"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_1qc9t28">
           <ns0:text></ns0:text>
@@ -7006,7 +7006,7 @@ Agenzia Generali TF5 Legnano Xxv Aprile", "Agenzia Generali Cantù 090", "Agenzi
           <ns0:text></ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_3nhd0s7">
-          <ns0:text>"Agenzia AXA 2301 Portogruaro; Agenzia AXA - MPS;Agenzia AXA 2814 Pordenone;Agenzia AXA 0804 Treviglio;Agenzia AXA 1212 Milano Brisa"</ns0:text>
+          <ns0:text>"Agenzia AXA 2301 Portogruaro#Agenzia AXA - MPS;Agenzia AXA 2814 Pordenone;Agenzia AXA 0804 Treviglio;Agenzia AXA 1212 Milano Brisa"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_2b1dis1">
           <ns0:text></ns0:text>
@@ -8260,7 +8260,7 @@ Agenzia Generali TF5 Legnano Xxv Aprile", "Agenzia Generali Cantù 090", "Agenzi
           <ns0:text></ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_1elgmpn">
-          <ns0:text>"Agenzia UnipolSai 58216 Parabiago; Agenzia UnipolSai 59665 Cornaredo; Agenzia UnipolSai 65256 Legnano C.so Italia; Agenzia UnipolSai 02603 Cuggiono; Agenzia UnipolSai 33129 Magenta via Beretta 28; Agenzia UnipolSai 34176 Castano Primo; Agenzia UnipolSai 45033 Abbiategrasso Galleria Europa; Agenzia UnipolSai 34028 Legnano via Venegoni; "</ns0:text>
+          <ns0:text>"Agenzia UnipolSai 58216 Parabiago#Agenzia UnipolSai 59665 Cornaredo#Agenzia UnipolSai 65256 Legnano C.so Italia#Agenzia UnipolSai 02603 Cuggiono#Agenzia UnipolSai 33129 Magenta via Beretta 28#Agenzia UnipolSai 34176 Castano Primo#Agenzia UnipolSai 45033 Abbiategrasso Galleria Europa#Agenzia UnipolSai 34028 Legnano via Venegoni; "</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_3a8gtfe">
           <ns0:text></ns0:text>
@@ -8920,10 +8920,10 @@ Agenzia Generali TF5 Legnano Xxv Aprile", "Agenzia Generali Cantù 090", "Agenzi
           <ns0:text></ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_2h9n67c">
-          <ns0:text>"Agenzia UnipolSai 45626 Garbagnate; Agenzia UnipolSai 44383 Rho via Madonna; Agenzia UnipolSai 64595 Firenze Nord"</ns0:text>
+          <ns0:text>"Agenzia UnipolSai 45626 Garbagnate#Agenzia UnipolSai 44383 Rho via Madonna#Agenzia UnipolSai 64595 Firenze Nord"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_158ui5t">
-          <ns0:text>"Amm. Studio Dr. Cavallo Antonio; Guagliardi Geom. Stefano; Arch. Daniele Digiuni; Manager Stabili srl;Studio Bosi sas di Bosi Geom. Pierluigi and C.;Studio Ursino"</ns0:text>
+          <ns0:text>"Amm. Studio Dr. Cavallo Antonio#Guagliardi Geom. Stefano#Arch. Daniele Digiuni#Manager Stabili srl#Studio Bosi sas di Bosi Geom. Pierluigi and C.#Studio Ursino"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_1it5o3j">
           <ns0:text></ns0:text>
@@ -12814,7 +12814,7 @@ Agenzia Generali TF5 Legnano Xxv Aprile", "Agenzia Generali Cantù 090", "Agenzi
           <ns0:text></ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_20h55gc">
-          <ns0:text>"Agenzia UnipolSai 40078 Cologno al Serio; Agenzia UnipolSai 64469 Pandino"</ns0:text>
+          <ns0:text>"Agenzia UnipolSai 40078 Cologno al Serio#Agenzia UnipolSai 64469 Pandino"</ns0:text>
         </ns0:outputEntry>
         <ns0:outputEntry id="OutputEntry_23bbbom">
           <ns0:text></ns0:text>

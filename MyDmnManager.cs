@@ -8,7 +8,6 @@ using NPOI.XSSF.UserModel;
 using System.IO;
 
  
-
 namespace MyDmnEngine
 {
     public class MyDmn {
@@ -404,5 +403,21 @@ namespace MyDmnEngine
                 throw new DmnException("SaveDmnXlsx error: " + e.Message, e);
             }
         }
+
+        // gest dmn model , for test
+        public static void GetDmnModel (Boolean debug, String fileName)
+        {
+            try
+            {
+                var model = DmnParser.Parse13ext(fileName);
+                var def = DmnDefinitionFactory.CreateDmnDefinition(model);
+                var ctx = DmnExecutionContextFactory.CreateExecutionContext(model);
+                MyDmn.LogMessage(debug,"model = " + ctx.ToString());
+            }        
+            catch (Exception e)
+            {
+                throw new DmnException("executeDmn error: " + e.Message, e);
+            }
+        }    
     }        
 }
