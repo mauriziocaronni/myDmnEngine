@@ -206,8 +206,8 @@ namespace MyDmnEngine
                 ISheet sheet = workbook.GetSheetAt(0); // Ottieni il primo foglio di lavoro
 
                 // Itera su ogni riga del foglio di lavoro
-                //for (int row = 1; row <= worksheet.Dimension.End.Row; row++)
-                for (int row = 0; row <= sheet.LastRowNum; row++)
+                //salta la riga 0 con titoli
+                for (int row = 1; row <= sheet.LastRowNum; row++)
                 {   
                     // Salta le righe vuote
                     if (sheet.GetRow(row) == null)
@@ -246,34 +246,137 @@ namespace MyDmnEngine
                 var result = new DmnDecisionResult();
 
                 var testInputTable = MyDmn.ReadTestScenario(inputList,filePathNameTestScenario);
+                var testOutputTable = new List <Dictionary<string, string>> (testInputTable);
+                // init output table
+                foreach (var testOutput in testOutputTable)
+                {
+                    foreach (var output in outputList)
+                    {
+                        testOutput[output] = "";
+                    }
+                }
+
+
                 foreach (var testInput in testInputTable)
                     {
                             MyDmn.LogMessage(debug,"testInput = ");
                             foreach (var input in testInput)
                             {
-                                MyDmn.LogMessage(debug,"\t" + input.Key + " = " + input.Value);
-                                ctx.WithInputParameter(input.Key, input.Value);
+                                if (inputList.Contains(input.Key))
+                                {
+                                    MyDmn.LogMessage(debug,"\t" + input.Key + " = " + input.Value);
+                                    ctx.WithInputParameter(input.Key, input.Value);
+                                }
+
                             }
                             MyDmn.LogMessage(debug,"eseguo Dmn");
                             MyDmn.LogMessage(debug,"Risultati =");
                             
                             result = ctx.ExecuteDecision(decision);
+
+                            var testCase=0;
                             foreach (var item in result.Results)
                             { 
                                 foreach (var resVariable in item.Variables)
                                 {
                                     if (resVariable.Value != null)
-                                        {MyDmn.LogMessage(debug, resVariable.Value.ToString());}
-                                }              
+                                        {
+                                            MyDmn.LogMessage(debug, resVariable.Value.ToString());
+                                            testOutputTable[testCase][resVariable.Name] = testOutputTable[testCase][resVariable.Name] +"#" + resVariable.Value.ToString();
+                                            }
+                                } 
+                                testCase++;             
                             } 
 
-                        }
+                    }
+                MyDmn.WriteTestScenario(debug,fileName,filePathNameTestScenario,testOutputTable);
             }
             catch (Exception e)
             {
                 throw new DmnException("executeDmnTestScenario error: " + e.Message, e);
             }
         }
+
+        // scrive il test scenario
+        public static void WriteTestScenario (Boolean debug, string fileName, string filePathNameTestScenario, List<Dictionary<string, string>> testOutputTable)
+        {
+            try
+            {
+                var inputList = MyDmn.GetDmnInputs(false,fileName);
+                var outputList = MyDmn.GetDmnOutputs(false, fileName);
+
+                var workbook = new XSSFWorkbook();
+                IFont fontRed = workbook.CreateFont();
+                fontRed.Color = IndexedColors.Red.Index;
+                IFont fontBlk = workbook.CreateFont();
+                fontBlk.Color = IndexedColors.Black.Index;
+
+                ICellStyle styleRed = workbook.CreateCellStyle();
+                ICellStyle styleBlk = workbook.CreateCellStyle();
+                
+                styleRed.SetFont(fontRed);
+                styleBlk.SetFont(fontBlk);
+                
+
+                var sheet = workbook.CreateSheet("DMN Test Scenario");
+                var row = 0;
+                var cell = 0;
+                var headerRow = sheet.CreateRow(row);
+                foreach (var input in inputList)
+                {
+                    headerRow.CreateCell(cell).SetCellValue(input);
+                    cell++;
+                }
+                foreach (var output in outputList)
+                {
+                    headerRow.CreateCell(cell).SetCellValue(output);
+                    cell++;
+                }
+                row++;
+
+                foreach (var testOutput in testOutputTable)
+                {
+                    var dataRow = sheet.CreateRow(row);
+                    // imposto i valori degli input
+                    foreach (var elem in testOutput)
+                    {
+                        int index = inputList.IndexOf(elem.Key);
+                        if (index >= 0)
+                        {
+                            ICell myCell = dataRow.CreateCell(index);
+                            myCell.SetCellValue(elem.Value);
+                            myCell.CellStyle = styleBlk;
+
+                        }
+                    }
+                    // imposto i valori degli output
+                    var offset= inputList.Count;
+                    foreach (var elem in testOutput)
+                    {
+                        int index = outputList.IndexOf(elem.Key);
+                        if (index >= 0)
+                        {
+                            ICell myCell = dataRow.CreateCell(offset + index);
+                            myCell.SetCellValue(elem.Value);
+                            myCell.CellStyle = styleRed;
+
+                        }
+                    }
+                    row++;
+                }
+                string executionFileName = fileName.Replace(".dmn", "_test_exec_" + DateTime.Now.ToString("yyyyMMddHHmmss") +".xlsx");
+                using (var fileData = new FileStream(executionFileName, FileMode.Create))
+                {
+                    workbook.Write(fileData);
+                }
+            }
+            catch (Exception e)
+            {
+                throw new DmnException("WriteTestScenario error: " + e.Message, e);
+            }
+        }
+
+
 
         // esegue test generico
         public static void ExecuteDmnGenericTest(Boolean debug, string fileName)
