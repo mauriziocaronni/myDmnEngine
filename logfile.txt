@@ -60087,3 +60087,889 @@ outputList =
 	AmministratoreEsclusivo
 	contraente o assicurato in esclusiva
 end date 11/03/2024 21:49:15
+start date 14/03/2024 17:29:18
+processing ./dmn/test/new_UserQualifications-MasterGlobalDef304.dmn
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+testScenario found
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+testInput = 
+	Task = ED
+	Azienda = C&P
+	Compagnia = GEN
+	DannoTipo = Acqua Condotta
+	ContraenteTipo = AZI
+	TipoDiIncarico = PER
+	Agenzia = 
+	Riserva = 20001
+	Authority = 300000
+	Broker = 
+	Amministratore = 
+	Provincia = MI
+eseguo Dmn
+Risultati =
+andrea.lanza@cep-srl.com
+paolo.gironi@cep-srl.com
+fabrizio.magnani@cep-srl.com
+andrea.scapin@cep-srl.com
+NESSUNO
+testInput = 
+	Task = ED
+	Azienda = A&A
+	Compagnia = ISA
+	DannoTipo = Acqua Condotta
+	ContraenteTipo = AZI
+	TipoDiIncarico = PER
+	Agenzia = 
+	Riserva = 20001
+	Authority = 300000
+	Broker = 
+	Amministratore = 
+	Provincia = MI
+eseguo Dmn
+Risultati =
+natashia.rizzuto@aeaitalia.com
+elisa.crocco@EXPERTAitalia.com
+NESSUNO
+testInput = 
+	Task = EE
+	Azienda = EXPERTA
+	Compagnia = ALN
+	DannoTipo = Eventi naturali
+	TipoDiIncarico = PERIN
+	Riserva = 10000
+	Authority = 1000
+eseguo Dmn
+Risultati =
+alberto.Clemente@aeaitalia.com
+ilaria.Tusa@EXPERTAitalia.com
+alin.cosmelata@EXPERTAitalia.com
+micol.lamacchia@EXPERTAitalia.com
+nicola.martino@aeaitalia.com
+saimir.seferi@EXPERTAitalia.com
+sara.dellagioia@EXPERTAitalia.com
+Agenzia Generali T3B Varese Citta Giardino#Agenzia Generali Milano Sempione T5R
+pietro.fumagalli@aeaitalia.com
+alessandro.valentini@EXPERTAitalia.com
+maurizio.wieser@EXPERTAitalia.com
+NESSUNO
+testInput = 
+	Task = ED
+	Azienda = C&P
+	Compagnia = AIG
+	DannoTipo = Danno Elettrico
+	TipoDiIncarico = PER
+	Riserva = 20001
+	Authority = 300000
+	Provincia = VA
+eseguo Dmn
+Risultati =
+andrea.lanza@cep-srl.com
+paolo.gironi@cep-srl.com
+fabrizio.magnani@cep-srl.com
+andrea.scapin@cep-srl.com
+NESSUNO
+testInput = 
+	Task = ACC
+	Azienda = VERING
+	Compagnia = ISA
+	DannoTipo = Danno Elettrico
+	TipoDiIncarico = CTP
+eseguo Dmn
+Risultati =
+patrizia.incerti@veringitalia.com
+camilla.pellegrini@veringitalia.com
+NESSUNO
+testInput = 
+	Task = MCC
+	Azienda = VERING
+	Compagnia = UFO
+	DannoTipo = Rottura Piatti
+	TipoDiIncarico = CTP
+	Provincia = CZ
+eseguo Dmn
+Risultati =
+vanessa.cocchi@veringitalia.com
+patrizia.incerti@veringitalia.com
+camilla.pellegrini@veringitalia.com
+NESSUNO
+testInput = 
+	Task = SR
+	Azienda = EXPERTA
+	Compagnia = AXA
+	DannoTipo = Atto vandalico
+	Riserva = -1
+	Authority = 200
+	Provincia = RM
+eseguo Dmn
+Risultati =
+fabrizio.barbieri@EXPERTAitalia.com
+ilaria.totaro@EXPERTAitalia.com
+marina.marti@EXPERTAitalia.com
+marco.sandroni@EXPERTAitalia.com
+loris.vivaldini@EXPERTAitalia.com
+NESSUNO
+testInput = 
+	Task = SR
+	Azienda = EXPERTA
+	Compagnia = AXA
+	DannoTipo = Atto vandalico
+	Riserva = -1
+	Authority = 3000
+	Provincia = FI
+eseguo Dmn
+Risultati =
+fabrizio.barbieri@EXPERTAitalia.com
+ilaria.totaro@EXPERTAitalia.com
+loris.vivaldini@EXPERTAitalia.com
+NESSUNO
+testInput = 
+	Task = RF
+	Azienda = EXPERTA
+	Compagnia = VIT
+	DannoTipo = Responsabilità civile
+eseguo Dmn
+Risultati =
+serena.pulici@EXPERTAitalia.com
+beatriz.sosa@EXPERTAitalia.com
+enza.sodaro@aeaitalia.com
+domenica.arena@EXPERTAitalia.com
+barbara.serra@aeaitalia.com
+NESSUNO
+testInput = 
+	Task = MSC
+	Azienda = EXPERTA
+	Compagnia = VIT
+	DannoTipo = Responsabilità civile
+eseguo Dmn
+Risultati =
+cipriana.cento@EXPERTAitalia.com
+cristina.vassena@EXPERTAitalia.com
+jessica.ongarello@EXPERTAitalia.com
+patrizia.androsiglio@EXPERTAitalia.com
+barbara.serra@aeaitalia.com
+NESSUNO
+testInput = 
+	Task = EE
+	Azienda = VERING
+	Compagnia = RMA
+	DannoTipo = Responsabilità civile
+	Riserva = 1
+	Authority = 1
+eseguo Dmn
+Risultati =
+anna.galli@EXPERTAitalia.com
+paola.aimoni@EXPERTAitalia.com
+luca.centola@EXPERTAitalia.com
+gianluca.gulotta@aeaitalia.com
+martina.lauria@EXPERTAitalia.com
+vincenzo.pellegrino@EXPERTAitalia.com
+maurizio.wieser@EXPERTAitalia.com
+NESSUNO
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+start date 14/03/2024 17:55:01
+processing ./dmn/test/new_UserQualifications-MasterGlobalDef304.dmn
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+testScenario found
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+testInput = 
+	Task = ED
+	Azienda = C&P
+	Compagnia = GEN
+	DannoTipo = Acqua Condotta
+	ContraenteTipo = AZI
+	TipoDiIncarico = PER
+	Agenzia = 
+	Riserva = 20001
+	Authority = 300000
+	Broker = 
+	Amministratore = 
+	Provincia = MI
+eseguo Dmn
+Risultati =
+andrea.lanza@cep-srl.com
+paolo.gironi@cep-srl.com
+error: executeDmnTestScenario error: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+end date 14/03/2024 17:55:02
+start date 14/03/2024 17:55:59
+processing ./dmn/test/new_UserQualifications-MasterGlobalDef304.dmn
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+testScenario found
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+testInput = 
+	Task = ED
+	Azienda = C&P
+	Compagnia = GEN
+	DannoTipo = Acqua Condotta
+	ContraenteTipo = AZI
+	TipoDiIncarico = PER
+	Agenzia = 
+	Riserva = 20001
+	Authority = 300000
+	Broker = 
+	Amministratore = 
+	Provincia = MI
+eseguo Dmn
+Risultati =
+andrea.lanza@cep-srl.com
+start date 14/03/2024 18:09:14
+processing ./dmn/test/new_UserQualifications-MasterGlobalDef304.dmn
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+testScenario found
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+testInput = 
+	Task = ED
+	Azienda = C&P
+	Compagnia = GEN
+	DannoTipo = Acqua Condotta
+	ContraenteTipo = AZI
+	TipoDiIncarico = PER
+	Agenzia = 
+	Riserva = 20001
+	Authority = 300000
+	Broker = 
+	Amministratore = 
+	Provincia = MI
+eseguo Dmn
+Risultati =
+user = andrea.lanza@cep-srl.com
+All results = #andrea.lanza@cep-srl.com
+user = paolo.gironi@cep-srl.com
+All results = #andrea.lanza@cep-srl.com#paolo.gironi@cep-srl.com
+user = fabrizio.magnani@cep-srl.com
+All results = #andrea.lanza@cep-srl.com#paolo.gironi@cep-srl.com#fabrizio.magnani@cep-srl.com
+user = andrea.scapin@cep-srl.com
+All results = #andrea.lanza@cep-srl.com#paolo.gironi@cep-srl.com#fabrizio.magnani@cep-srl.com#andrea.scapin@cep-srl.com
+user = NESSUNO
+All results = #andrea.lanza@cep-srl.com#paolo.gironi@cep-srl.com#fabrizio.magnani@cep-srl.com#andrea.scapin@cep-srl.com#NESSUNO
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+end date 14/03/2024 18:09:15
+start date 14/03/2024 18:10:24
+processing ./dmn/test/new_UserQualifications-MasterGlobalDef304.dmn
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+testScenario found
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+testInput = 
+	Task = ED
+	Azienda = C&P
+	Compagnia = GEN
+	DannoTipo = Acqua Condotta
+	ContraenteTipo = AZI
+	TipoDiIncarico = PER
+	Agenzia = 
+	Riserva = 20001
+	Authority = 300000
+	Broker = 
+	Amministratore = 
+	Provincia = MI
+eseguo Dmn
+Risultati =
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+end date 14/03/2024 18:10:25
+start date 14/03/2024 18:12:28
+processing ./dmn/test/new_UserQualifications-MasterGlobalDef304.dmn
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+testScenario found
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+testInput = 
+	Task = ED
+	Azienda = C&P
+	Compagnia = GEN
+	DannoTipo = Acqua Condotta
+	ContraenteTipo = AZI
+	TipoDiIncarico = PER
+	Agenzia = 
+	Riserva = 20001
+	Authority = 300000
+	Broker = 
+	Amministratore = 
+	Provincia = MI
+eseguo Dmn
+Risultati =
+testInput = 
+	Task = ED
+	Azienda = A&A
+	Compagnia = ISA
+	DannoTipo = Acqua Condotta
+	ContraenteTipo = AZI
+	TipoDiIncarico = PER
+	Agenzia = 
+	Riserva = 20001
+	Authority = 300000
+	Broker = 
+	Amministratore = 
+	Provincia = MI
+eseguo Dmn
+Risultati =
+testInput = 
+	Task = EE
+	Azienda = EXPERTA
+	Compagnia = ALN
+	DannoTipo = Eventi naturali
+	TipoDiIncarico = PERIN
+	Riserva = 10000
+	Authority = 1000
+eseguo Dmn
+Risultati =
+testInput = 
+	Task = ED
+	Azienda = C&P
+	Compagnia = AIG
+	DannoTipo = Danno Elettrico
+	TipoDiIncarico = PER
+	Riserva = 20001
+	Authority = 300000
+	Provincia = VA
+eseguo Dmn
+Risultati =
+testInput = 
+	Task = ACC
+	Azienda = VERING
+	Compagnia = ISA
+	DannoTipo = Danno Elettrico
+	TipoDiIncarico = CTP
+eseguo Dmn
+Risultati =
+testInput = 
+	Task = MCC
+	Azienda = VERING
+	Compagnia = UFO
+	DannoTipo = Rottura Piatti
+	TipoDiIncarico = CTP
+	Provincia = CZ
+eseguo Dmn
+Risultati =
+testInput = 
+	Task = SR
+	Azienda = EXPERTA
+	Compagnia = AXA
+	DannoTipo = Atto vandalico
+	Riserva = -1
+	Authority = 200
+	Provincia = RM
+eseguo Dmn
+Risultati =
+testInput = 
+	Task = SR
+	Azienda = EXPERTA
+	Compagnia = AXA
+	DannoTipo = Atto vandalico
+	Riserva = -1
+	Authority = 3000
+	Provincia = FI
+eseguo Dmn
+Risultati =
+testInput = 
+	Task = RF
+	Azienda = EXPERTA
+	Compagnia = VIT
+	DannoTipo = Responsabilità civile
+eseguo Dmn
+Risultati =
+testInput = 
+	Task = MSC
+	Azienda = EXPERTA
+	Compagnia = VIT
+	DannoTipo = Responsabilità civile
+eseguo Dmn
+Risultati =
+testInput = 
+	Task = EE
+	Azienda = VERING
+	Compagnia = RMA
+	DannoTipo = Responsabilità civile
+	Riserva = 1
+	Authority = 1
+eseguo Dmn
+Risultati =
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+end date 14/03/2024 18:12:29

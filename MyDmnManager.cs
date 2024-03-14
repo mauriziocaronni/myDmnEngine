@@ -256,7 +256,7 @@ namespace MyDmnEngine
                     }
                 }
 
-
+                var testCase=0;
                 foreach (var testInput in testInputTable)
                     {
                             MyDmn.LogMessage(debug,"testInput = ");
@@ -274,20 +274,21 @@ namespace MyDmnEngine
                             
                             result = ctx.ExecuteDecision(decision);
 
-                            var testCase=0;
+
                             foreach (var item in result.Results)
                             { 
                                 foreach (var resVariable in item.Variables)
                                 {
                                     if (resVariable.Value != null)
-                                        {
-                                            MyDmn.LogMessage(debug, resVariable.Value.ToString());
-                                            testOutputTable[testCase][resVariable.Name] = testOutputTable[testCase][resVariable.Name] +"#" + resVariable.Value.ToString();
+                                        {   
+                                            var singleResult = resVariable.Value.ToString();
+                                            var allResults = testOutputTable[testCase][resVariable.Name] +"#" + resVariable.Value.ToString();
+                                            testOutputTable[testCase][resVariable.Name] = allResults;
                                             }
                                 } 
-                                testCase++;             
                             } 
 
+                    testCase++;             
                     }
                 MyDmn.WriteTestScenario(debug,fileName,filePathNameTestScenario,testOutputTable);
             }
