@@ -1,0 +1,29 @@
+
+decision (id, name)
+    [
+        informationRequirement (id)
+            requiredInput (href)
+    ]
+    decisionTable (id, hitPolicy)
+        [
+            input (id, label)
+                inputExpression (id, typeRef)
+                    text
+        ]
+        [
+            output (id, label, name, typeRef)    
+        ]
+        [
+            rule (id)
+                description
+                [
+                    inputEntry (id)
+                        text
+                ]
+                [
+                    outputEntry (id)
+                        text
+                ]
+        ]
+
+

@@ -2,15 +2,22 @@ using net.adamec.lib.common.dmn.engine.parser;
 using net.adamec.lib.common.dmn.engine.engine.execution.context;
 using net.adamec.lib.common.dmn.engine.engine.definition;
 using net.adamec.lib.common.dmn.engine.engine.execution.result;
+using net.adamec.lib.common.dmn.engine.utils;
+
 using System.Xml.Linq;
 using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
 using System.IO;
+using System.Xml.Serialization;
+using NPOI.HSSF.Record.PivotTable;
+using System.Diagnostics;
+using System.IO.Enumeration;
 
- 
 namespace MyDmnEngine
 {
     public class MyDmn {
+
+
         public static void LogMessage(Boolean debug, string message)
         {
             var logfile = "logfile.txt";
@@ -100,6 +107,43 @@ namespace MyDmnEngine
             }
         }
 
+        // restituisce la lista degli inputTypes  del DMN
+        public static List<string> GetDmnInputTypes(Boolean debug, string fileName)
+        {
+            var inputTypesList = new List<string>();
+            try
+            {
+                var doc = XDocument.Load(fileName);
+                XNamespace ns = "https://www.omg.org/spec/DMN/20191111/MODEL/";
+
+                LogMessage(debug,"inputTypes = ");
+ 
+                foreach (var input in doc.Descendants(ns + "inputExpression"))
+                {
+                    if (input.Attribute("typeRef") != null)
+                    {
+                        var inputName = input.Attribute("typeRef").Value;
+                        if (!string.IsNullOrEmpty(inputName))
+                        {
+                            inputTypesList.Add(inputName);
+                        }
+                    }
+                }
+                foreach (var input in inputTypesList)
+                    {
+                       MyDmn.LogMessage(debug,"\t" + input);
+                    }
+
+                return inputTypesList;
+            }
+            catch (Exception e)
+            {
+                throw new DmnException("GetDMNInputTypes error: " + e.Message, e);
+            }
+        }
+
+
+
         // restituisce la lista degli output del DMN
         public static List<string> GetDmnOutputs(Boolean debug, string fileName)
         {
@@ -133,6 +177,46 @@ namespace MyDmnEngine
             }
         }
 
+       // restituisce la lista di liste di regole
+        public static List<List<string>> GetDmnRuleTable(Boolean debug, string fileName)
+        {
+            //var rule = new List<string>();
+            var ruleTable = new List<List<string>>();
+
+            try
+            {
+                var doc = XDocument.Load(fileName);
+                XNamespace ns = "https://www.omg.org/spec/DMN/20191111/MODEL/";
+
+                foreach (var rule in doc.Descendants(ns + "rule"))
+                {
+                    var ruleList = new List<string>();
+                    foreach (var input in rule.Descendants(ns + "inputEntry"))
+                    {
+                        var inputText = input.Descendants(ns + "text").FirstOrDefault();
+                        ruleList.Add(inputText.Value);
+                    }
+
+                    foreach (var output in rule.Descendants(ns + "outputEntry"))
+                    {
+                        var outputText = output.Descendants(ns + "text").FirstOrDefault();
+                        ruleList.Add(outputText.Value);
+                    }
+                    ruleTable.Add(ruleList);
+
+                }                   
+                MyDmn.LogMessage(debug,"Rules = ");
+                foreach (var rule in ruleTable)
+                    {
+                       MyDmn.LogMessage(debug,"\t" + rule.ToString());
+                    }                 
+                return ruleTable;
+            }
+            catch (Exception e)
+            {
+                throw new DmnException("GetDMNoutputs error: " + e.Message, e);
+            }
+        }
 
     // restituisce il nome della decisione
         public static string GetDmnDecision(Boolean debug, string fileName)
@@ -450,6 +534,16 @@ namespace MyDmnEngine
                     ruleTable.Add(ruleList);
                     }
                 }
+
+ //               foreach (var item in ruleTable)
+ //                   {   
+ //                       var ruleString = "";
+ //                       foreach (var rule in item)
+ //                       {
+ //                          ruleString = ruleString + rule + ";";
+ //                       }
+ //                       MyDmn.LogMessage(debug, ruleString);
+ //                   }                
             return ruleTable;
             }
             catch (Exception e)
@@ -523,5 +617,234 @@ namespace MyDmnEngine
                 throw new DmnException("executeDmn error: " + e.Message, e);
             }
         }    
-    }        
+
+    } // end myMyDmn
+
+           // new stage
+    public class DmnObject {
+            public string dmnFileName { get; set; }
+            public Dictionary<string, string> inputDefs { get; set; }
+            public Dictionary<string, string> outputDefs { get; set; }
+
+            public List<Dictionary<string, string>> ruleTable { get; set; }
+            public string decision { get; set; }
+
+            public void CreateDmnObject (Boolean debug, string fileName)
+                {
+                inputDefs = new Dictionary<string, string>();
+                outputDefs = new Dictionary<string, string>();
+                ruleTable = []  ;
+                decision = ""   ;
+
+                try
+                {
+                dmnFileName = fileName;
+                var xdoc = XDocument.Load(fileName);
+                var ns = xdoc.Root.Name.Namespace;
+                var xdecision = xdoc.Descendants(ns + "decision").FirstOrDefault();
+                decision = xdecision.Attribute("name").Value;
+    
+                // colonne di input e loro tipo
+                var xinputDefs = xdoc.Descendants(ns + "input");
+                foreach (var inputDef in xinputDefs)
+                {
+                    var label = inputDef.Attribute("label").Value;
+                    inputDefs.Add(label, "");
+                }
+
+                var xinputExpr = xdoc.Descendants(ns + "inputExpression");
+                foreach (var inputExpr in xinputExpr)
+                {
+                    var typeRef = inputExpr.Attribute("typeRef").Value;
+                    var name = inputExpr.Descendants(ns + "text").FirstOrDefault().Value;
+                    inputDefs[name] = typeRef;
+                }
+
+
+                // colonne di output di tipo string
+                var xoutputDefs = xdoc.Descendants(ns + "output");
+                foreach (var outputDef in xoutputDefs)
+                {
+                    outputDefs.Add(outputDef.Attribute("label").Value, "string");
+                }
+    
+                // regole
+                var xrules = xdoc.Descendants(ns + "rule");
+                foreach (var rule in xrules)
+                {
+                    var ruleList = new List<string>();
+                    var ruleId = "";
+                    var inputEntries = rule.Descendants(ns + "inputEntry");
+                    var outputEntries = rule.Descendants(ns + "outputEntry");
+
+                    foreach (var inputEntry in inputEntries)
+                    {
+                        var inputText = inputEntry.Descendants(ns + "text").FirstOrDefault().Value;
+                        ruleList.Add(inputText);
+                    }
+
+                    foreach (var outputEntry in outputEntries)
+                    {
+                        var outputText = outputEntry.Descendants(ns + "text").FirstOrDefault().Value;
+                        ruleList.Add(outputText);
+                    }
+
+
+                    var ruleRow = new Dictionary<string, string>();
+                    ruleId = rule.Attribute("id").Value;
+                    ruleRow.Add("Id", ruleId);
+
+                    var i=0;
+                    foreach (var inputDef in inputDefs)
+                    {
+                        ruleRow.Add(inputDef.Key, ruleList[i]);
+                        i++;
+                    }
+                    foreach (var outputDef in outputDefs)
+                    {
+                        ruleRow.Add(outputDef.Key, ruleList[i]);
+                        i++;
+                    }
+                    
+                    ruleTable.Add(ruleRow);
+                }
+
+                }
+                catch (Exception e)
+                {
+                    throw new Exception("createDmn error: " + e.Message, e);
+                }
+            }
+        // add empty rule
+
+        public string AddRule (Boolean debug)
+                {
+                var ruleId ="";
+                try
+                {
+                    if (dmnFileName == "")
+                    {
+                        throw new Exception("dmn not initialized");
+                    }
+
+                    ruleId = "Rule_" + Guid.NewGuid().ToString().Substring(0, 7);
+
+                    var blankRow = new Dictionary<string, string>();
+                    var masterRow = ruleTable[0];
+
+                    foreach (var key in masterRow.Keys.ToList())
+                    {
+                        blankRow.Add(key,"-");
+                    }
+                    blankRow["Id"] = ruleId;
+                    ruleTable.Add(blankRow);
+
+                }
+                catch (Exception e)
+                {
+                    throw new Exception("add row error: " + e.Message, e);
+                }
+                return ruleId;
+            }
+        // delete rule
+
+        public void DeleteRule (Boolean debug, string ruleId)
+                {
+                try
+                {
+                    if (dmnFileName == "")
+                    {
+                        throw new Exception("dmn not initialized");
+                    }
+
+                    var rule = ruleTable.Find(x => x["Id"] == ruleId);
+                    if (rule != null)
+                    {
+                        ruleTable.Remove(rule);
+                    }
+                }
+                catch (Exception e)
+                {
+                    throw new Exception("delete row error: " + e.Message, e);
+                }
+            }
+        // update rule
+
+        public void UpdateRule (Boolean debug, string ruleId, string key, string value)
+                {
+                try
+                {
+                    if (dmnFileName == "")
+                    {
+                        throw new Exception("dmn not initialized");
+                    }
+
+                    var rule = ruleTable.Find(x => x["Id"] == ruleId);
+                    if (rule != null)
+                    {
+                        rule[key] = value;
+                    }
+                }
+                catch (Exception e)
+                {
+                    throw new Exception("update row error: " + e.Message, e);
+                }
+            } 
+    
+        // save dmn object to file
+        public void SaveDmnObject (Boolean debug ) 
+        {
+            try
+            {
+                if (dmnFileName == "")
+                {
+                    throw new Exception("dmn not initialized");
+                }
+
+                var xdoc = XDocument.Load(dmnFileName);
+                var ns = xdoc.Root.Name.Namespace;
+
+                // elimino le regole
+                var xrules = xdoc.Descendants(ns + "rule");
+                foreach (var rule in xrules.ToList())
+                {
+                    rule.Remove();
+                }
+
+                // aggiungo le nuove regole
+                foreach (var ruleRow in ruleTable)
+                {
+                    var xrule = new XElement(ns + "rule");
+                    xrule.SetAttributeValue("id", ruleRow["Id"]);
+                    var i=0;
+                    foreach (var inputDef in inputDefs)
+                    {
+                        var xinputEntry = new XElement(ns + "inputEntry");
+                        var xinputText = new XElement(ns + "text");
+                        xinputText.Value = ruleRow[inputDef.Key];
+                        xinputEntry.Add(xinputText);
+                        xrule.Add(xinputEntry);
+                        i++;
+                    }
+                    foreach (var outputDef in outputDefs)
+                    {
+                        var xoutputEntry = new XElement(ns + "outputEntry");
+                        var xoutputText = new XElement(ns + "text");
+                        xoutputText.Value = ruleRow[outputDef.Key];
+                        xoutputEntry.Add(xoutputText);
+                        xrule.Add(xoutputEntry);
+                        i++;
+                    }
+                    xdoc.Descendants(ns + "decisionTable").FirstOrDefault().Add(xrule);
+                }
+
+                xdoc.Save(dmnFileName);
+            }
+            catch (Exception e)
+            {
+                throw new Exception("saveDmn error: " + e.Message, e);
+            }
+        }
+    }
+    // end new stage
 }

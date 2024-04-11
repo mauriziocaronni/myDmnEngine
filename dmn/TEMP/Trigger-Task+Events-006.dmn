@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" id="Definitions_1oa4gnt" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.19.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.19.0">
+  <decision id="Decision_0bgfrh5" name="TriggerTask">
+    <informationRequirement id="InformationRequirement_1f0girv">
+      <requiredInput href="#InputData_0ylml6d" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_1cmubh9">
+      <requiredInput href="#InputData_0qk4g8f" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_0rd89iw">
+      <requiredInput href="#InputData_1w87cuo" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_1qeyf5c">
+      <requiredInput href="#InputData_02y0j0k" />
+    </informationRequirement>
+    <decisionTable id="DecisionTable_0ufm9js" hitPolicy="FIRST">
+      <input id="Input_1" label="Company">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>Company</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0523tot" label="InsuranceCompany">
+        <inputExpression id="LiteralExpression_0osocwd" typeRef="string">
+          <text>InsuranceCompany</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1vbfwuv" label="DamageType">
+        <inputExpression id="LiteralExpression_08j06xq" typeRef="string">
+          <text>DamageType</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_021m49w" label="Task">
+        <inputExpression id="LiteralExpression_1wo0w5q" typeRef="string">
+          <text>Task</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="ExpirationInHours" name="ExpirationInHours" typeRef="integer" />
+      <output id="OutputClause_06tkohd" label="NumberOfExecutions" name="NumberOfExecutions" typeRef="integer" />
+      <output id="OutputClause_1sdi2ar" label="NextEventOnExpiration" name="NextEventOnExpiration" typeRef="string" />
+      <rule id="DecisionRule_0fvh5fh">
+        <description></description>
+        <inputEntry id="UnaryTests_135onh7">
+          <text>"A&amp;A", "EXPERTA", "VERING"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_02wx3mz">
+          <text>"GEN","CAT","AVI","ZUR","HEL","AXA","UNI","ARC","AMI","ISA"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0h2mxii">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0wcd9sq">
+          <text>"SRPA1"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0i43pgp">
+          <text>24</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1wygcab">
+          <text>1</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0hg6mj8">
+          <text>"TimerScaduto"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0k7fegg">
+        <inputEntry id="UnaryTests_0d7uw6e">
+          <text>"A&amp;A", "EXPERTA", "VERING"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_007su8k">
+          <text>"GEN","CAT","AVI","ZUR","HEL","AXA","UNI","ARC","AMI","ISA"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1sf77dm">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0jlwc2v">
+          <text>"SCM"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1cscyy0">
+          <text>48</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1tmkhbn">
+          <text>1</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0t1t4qg">
+          <text>"TimerScaduto"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1cbeonw">
+        <inputEntry id="UnaryTests_1adclk5">
+          <text>"A&amp;A", "EXPERTA", "VERING"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0m4k89m">
+          <text>"AXA"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0tlcb1w">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0cl9bpj">
+          <text>"SCM"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_095zpmv">
+          <text>72</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1f5hy1d">
+          <text>1</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_05c830t">
+          <text>"TimerScaduto"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1tduvek">
+        <inputEntry id="UnaryTests_081b808">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_09d8h86">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1xy0w2z">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0c19mea">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1dxxb3r">
+          <text>0</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1l3nfte">
+          <text>0</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1dlg9su">
+          <text>""</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <inputData id="InputData_0ylml6d" name="Company" />
+  <inputData id="InputData_0qk4g8f" name="InsuranceCompany" />
+  <inputData id="InputData_1w87cuo" name="DamageType" />
+  <inputData id="InputData_02y0j0k" name="Task" />
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_0bgfrh5">
+        <dc:Bounds height="80" width="180" x="350" y="240" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_0an7977" dmnElementRef="InputData_0ylml6d">
+        <dc:Bounds height="45" width="125" x="138" y="238" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_1gjxmw7" dmnElementRef="InformationRequirement_1f0girv">
+        <di:waypoint x="263" y="261" />
+        <di:waypoint x="330" y="280" />
+        <di:waypoint x="350" y="280" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_1reck4q" dmnElementRef="InputData_0qk4g8f">
+        <dc:Bounds height="45" width="125" x="198" y="128" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_198czrg" dmnElementRef="InformationRequirement_1cmubh9">
+        <di:waypoint x="261" y="173" />
+        <di:waypoint x="395" y="220" />
+        <di:waypoint x="395" y="240" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_0v0622u" dmnElementRef="InputData_1w87cuo">
+        <dc:Bounds height="45" width="125" x="418" y="78" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_1vmwdq5" dmnElementRef="InformationRequirement_0rd89iw">
+        <di:waypoint x="481" y="123" />
+        <di:waypoint x="440" y="220" />
+        <di:waypoint x="440" y="240" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_1lz1z3x" dmnElementRef="InputData_02y0j0k">
+        <dc:Bounds height="45" width="125" x="618" y="129" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_0zklp8t" dmnElementRef="InformationRequirement_1qeyf5c">
+        <di:waypoint x="681" y="174" />
+        <di:waypoint x="485" y="220" />
+        <di:waypoint x="485" y="240" />
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

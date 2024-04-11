@@ -60973,3 +60973,6152 @@ outputList =
 	AmministratoreEsclusivo
 	contraente o assicurato in esclusiva
 end date 14/03/2024 18:12:29
+start date 15/03/2024 12:30:48
+processing ./dmn/test/Task-SLA-003.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	Task = 1
+eseguo Dmn
+Risultati
+SLA_TASK:System.Int32=0
+Task_Weight:System.Double=0
+SLA_Appointment:System.Int32=0
+processing ./dmn/test/Opening-checkNullValues-010.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	InstructionType = 1
+eseguo Dmn
+Risultati
+RequiredFields:System.String=CompanyId#InsuranceCompanyId#DamageTypeId#InstructionTypeId#Number#ClaimReferenceNumber#InstructionDate#DateOfLoss#LossData.LossLocationAddress#Policy.RiskLocation.Address#Policy.RiskLocation.City#Policy.RiskLocation.PostalCode#Policy.RiskLocation.Province#Policy.RiskLocation.Country#Assicurato#Contraente#Danneggiato#Agenzia
+processing ./dmn/test/Opening-CheckLinkPA1-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	StartClaimInterval = 1
+	ContractorType = 1
+eseguo Dmn
+Risultati
+ServizioScelto:System.String=Nessun Servizio
+processing ./dmn/test/UserQualifications-NonSeq-005.dmn
+inputList = 
+	User
+outputList = 
+	Task
+inputList = 
+	User
+outputList = 
+	Task
+testScenario not found
+imposto dati input generici  
+inputList = 
+	User
+outputList = 
+	Task
+	User = 1
+eseguo Dmn
+Risultati
+Task:System.String=
+processing ./dmn/test/Opening-autoChooseService-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta Servizio 
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta Servizio 
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta Servizio 
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	RequestedAmount = 1
+	Reserve = 1
+	CESI = 1
+	RicercaDelGuasto = 1
+error: executeDmn error: Can't cast value to target type: Boolean. Value is: 1 of type String
+end date 15/03/2024 12:30:49
+start date 15/03/2024 12:34:26
+processing ./dmn/test/Task-SLA-003.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	Task = 1
+eseguo Dmn
+Risultati
+SLA_TASK:System.Int32=0
+Task_Weight:System.Double=0
+SLA_Appointment:System.Int32=0
+processing ./dmn/test/Opening-checkNullValues-010.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	InstructionType = 1
+eseguo Dmn
+Risultati
+RequiredFields:System.String=CompanyId#InsuranceCompanyId#DamageTypeId#InstructionTypeId#Number#ClaimReferenceNumber#InstructionDate#DateOfLoss#LossData.LossLocationAddress#Policy.RiskLocation.Address#Policy.RiskLocation.City#Policy.RiskLocation.PostalCode#Policy.RiskLocation.Province#Policy.RiskLocation.Country#Assicurato#Contraente#Danneggiato#Agenzia
+processing ./dmn/test/Opening-CheckLinkPA1-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	StartClaimInterval = 1
+	ContractorType = 1
+eseguo Dmn
+Risultati
+ServizioScelto:System.String=Nessun Servizio
+processing ./dmn/test/UserQualifications-NonSeq-005.dmn
+inputList = 
+	User
+outputList = 
+	Task
+inputList = 
+	User
+outputList = 
+	Task
+testScenario not found
+imposto dati input generici  
+inputList = 
+	User
+outputList = 
+	Task
+	User = 1
+eseguo Dmn
+Risultati
+Task:System.String=
+processing ./dmn/test/Opening-autoChooseService-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta Servizio 
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta Servizio 
+testScenario found
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta Servizio 
+testInput = 
+	Company = EXPERTA
+	InsuranceCompany = GEN
+	DamageType = AC
+	RequestedAmount = 300
+	Reserve = 
+error: executeDmnTestScenario error: Can't cast value to target type: Int32. Value is:  of type String
+end date 15/03/2024 12:34:26
+start date 15/03/2024 12:36:22
+processing ./dmn/test/Task-SLA-003.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	Task = 1
+eseguo Dmn
+Risultati
+SLA_TASK:System.Int32=0
+Task_Weight:System.Double=0
+SLA_Appointment:System.Int32=0
+processing ./dmn/test/Opening-checkNullValues-010.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	InstructionType = 1
+eseguo Dmn
+Risultati
+RequiredFields:System.String=CompanyId#InsuranceCompanyId#DamageTypeId#InstructionTypeId#Number#ClaimReferenceNumber#InstructionDate#DateOfLoss#LossData.LossLocationAddress#Policy.RiskLocation.Address#Policy.RiskLocation.City#Policy.RiskLocation.PostalCode#Policy.RiskLocation.Province#Policy.RiskLocation.Country#Assicurato#Contraente#Danneggiato#Agenzia
+processing ./dmn/test/Opening-CheckLinkPA1-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	StartClaimInterval = 1
+	ContractorType = 1
+eseguo Dmn
+Risultati
+ServizioScelto:System.String=Nessun Servizio
+processing ./dmn/test/UserQualifications-NonSeq-005.dmn
+inputList = 
+	User
+outputList = 
+	Task
+inputList = 
+	User
+outputList = 
+	Task
+testScenario not found
+imposto dati input generici  
+inputList = 
+	User
+outputList = 
+	Task
+	User = 1
+eseguo Dmn
+Risultati
+Task:System.String=
+processing ./dmn/test/Opening-autoChooseService-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta Servizio 
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta Servizio 
+testScenario found
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta Servizio 
+testInput = 
+	Company = EXPERTA
+	InsuranceCompany = GEN
+	DamageType = AC
+	RequestedAmount = 300
+	ContractorType = PRI
+	LossLocation = 
+	InsuredPhones = 
+	SelfCareExecuted = 
+error: executeDmnTestScenario error: Can't cast value to target type: Boolean. Value is:  of type String
+end date 15/03/2024 12:36:22
+start date 15/03/2024 12:37:50
+processing ./dmn/test/Task-SLA-003.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	Task = 1
+eseguo Dmn
+Risultati
+SLA_TASK:System.Int32=0
+Task_Weight:System.Double=0
+SLA_Appointment:System.Int32=0
+processing ./dmn/test/Opening-checkNullValues-010.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	InstructionType = 1
+eseguo Dmn
+Risultati
+RequiredFields:System.String=CompanyId#InsuranceCompanyId#DamageTypeId#InstructionTypeId#Number#ClaimReferenceNumber#InstructionDate#DateOfLoss#LossData.LossLocationAddress#Policy.RiskLocation.Address#Policy.RiskLocation.City#Policy.RiskLocation.PostalCode#Policy.RiskLocation.Province#Policy.RiskLocation.Country#Assicurato#Contraente#Danneggiato#Agenzia
+processing ./dmn/test/Opening-CheckLinkPA1-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	StartClaimInterval = 1
+	ContractorType = 1
+eseguo Dmn
+Risultati
+ServizioScelto:System.String=Nessun Servizio
+processing ./dmn/test/UserQualifications-NonSeq-005.dmn
+inputList = 
+	User
+outputList = 
+	Task
+inputList = 
+	User
+outputList = 
+	Task
+testScenario not found
+imposto dati input generici  
+inputList = 
+	User
+outputList = 
+	Task
+	User = 1
+eseguo Dmn
+Risultati
+Task:System.String=
+processing ./dmn/test/Opening-autoChooseService-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta Servizio 
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta Servizio 
+testScenario found
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta Servizio 
+testInput = 
+	Company = EXPERTA
+	InsuranceCompany = GEN
+	DamageType = AC
+	RequestedAmount = 300
+	RicercaDelGuasto = false
+	ContractorType = PRI
+	LossLocation = 
+	InsuredPhones = 
+	SelfCareExecuted = false
+eseguo Dmn
+Risultati =
+error: executeDmnTestScenario error: The given key 'Scelta_Servizio' was not present in the dictionary.
+end date 15/03/2024 12:37:51
+start date 15/03/2024 12:38:59
+processing ./dmn/test/Task-SLA-003.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	Task = 1
+eseguo Dmn
+Risultati
+SLA_TASK:System.Int32=0
+Task_Weight:System.Double=0
+SLA_Appointment:System.Int32=0
+processing ./dmn/test/Opening-checkNullValues-010.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	InstructionType = 1
+eseguo Dmn
+Risultati
+RequiredFields:System.String=CompanyId#InsuranceCompanyId#DamageTypeId#InstructionTypeId#Number#ClaimReferenceNumber#InstructionDate#DateOfLoss#LossData.LossLocationAddress#Policy.RiskLocation.Address#Policy.RiskLocation.City#Policy.RiskLocation.PostalCode#Policy.RiskLocation.Province#Policy.RiskLocation.Country#Assicurato#Contraente#Danneggiato#Agenzia
+processing ./dmn/test/Opening-CheckLinkPA1-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	StartClaimInterval = 1
+	ContractorType = 1
+eseguo Dmn
+Risultati
+ServizioScelto:System.String=Nessun Servizio
+processing ./dmn/test/UserQualifications-NonSeq-005.dmn
+inputList = 
+	User
+outputList = 
+	Task
+inputList = 
+	User
+outputList = 
+	Task
+testScenario not found
+imposto dati input generici  
+inputList = 
+	User
+outputList = 
+	Task
+	User = 1
+eseguo Dmn
+Risultati
+Task:System.String=
+processing ./dmn/test/Opening-autoChooseService-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+testScenario found
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+testInput = 
+	Company = EXPERTA
+	InsuranceCompany = GEN
+	DamageType = AC
+	RequestedAmount = 300
+	RicercaDelGuasto = false
+	ContractorType = PRI
+	LossLocation = 
+	InsuredPhones = 
+	SelfCareExecuted = false
+eseguo Dmn
+Risultati =
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+processing ./dmn/test/Opening-checkCompletedData-017.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+	AdministrativeRegularity
+outputList = 
+	RequiredFields
+	InstructionCreation
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+	AdministrativeRegularity
+outputList = 
+	RequiredFields
+	InstructionCreation
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+	AdministrativeRegularity
+outputList = 
+	RequiredFields
+	InstructionCreation
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	InstructionType = 1
+	AdministrativeRegularity = 1
+eseguo Dmn
+Risultati
+RequiredFields:System.String=
+InstructionCreation:System.String=Manuale
+processing ./dmn/test/SubProcess-SLA-004.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Process
+outputList = 
+	SLA Phase
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Process
+outputList = 
+	SLA Phase
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Process
+outputList = 
+	SLA Phase
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	Process = 1
+eseguo Dmn
+Risultati
+SLA_Fase:System.Int32=0
+processing ./dmn/test/UserQualifications-Global-012.dmn
+inputList = 
+	Task
+	Company
+	InsuranceCompany
+	DamageType
+	ContractorType
+	InstructionType
+	Agency
+	Agency
+	Reserve
+	Authority
+	Broker
+	Broker
+	Administrator
+	Administrator
+	Province
+	InsuranceCompanyPortal
+outputList = 
+	user
+	InsuranceCompanyPriority
+	ExclusiveAgency
+	ExclusiveAdministrator
+	ExclusiveBroker
+	ExclusiveInsuredContractor
+inputList = 
+	Task
+	Company
+	InsuranceCompany
+	DamageType
+	ContractorType
+	InstructionType
+	Agency
+	Agency
+	Reserve
+	Authority
+	Broker
+	Broker
+	Administrator
+	Administrator
+	Province
+	InsuranceCompanyPortal
+outputList = 
+	user
+	InsuranceCompanyPriority
+	ExclusiveAgency
+	ExclusiveAdministrator
+	ExclusiveBroker
+	ExclusiveInsuredContractor
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Task
+	Company
+	InsuranceCompany
+	DamageType
+	ContractorType
+	InstructionType
+	Agency
+	Agency
+	Reserve
+	Authority
+	Broker
+	Broker
+	Administrator
+	Administrator
+	Province
+	InsuranceCompanyPortal
+outputList = 
+	user
+	InsuranceCompanyPriority
+	ExclusiveAgency
+	ExclusiveAdministrator
+	ExclusiveBroker
+	ExclusiveInsuredContractor
+	Task = 1
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	ContractorType = 1
+	InstructionType = 1
+	Agency = 1
+	Reserve = 1
+	Authority = 1
+	Broker = 1
+	Administrator = 1
+	Province = 1
+	InsuranceCompanyPortal = 1
+eseguo Dmn
+Risultati
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta servizio
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta servizio
+	Azienda = 1
+	Compagnia = 1
+	DannoTipo = 1
+	AmmontareDanno = 1
+	CESIpositivo1500m = 1
+error: executeDmn error: Can't cast value to target type: Boolean. Value is: 1 of type String
+end date 15/03/2024 12:39:00
+start date 15/03/2024 12:40:40
+processing ./dmn/test/Task-SLA-003.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	Task = 1
+eseguo Dmn
+Risultati
+SLA_TASK:System.Int32=0
+Task_Weight:System.Double=0
+SLA_Appointment:System.Int32=0
+processing ./dmn/test/Opening-checkNullValues-010.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	InstructionType = 1
+eseguo Dmn
+Risultati
+RequiredFields:System.String=CompanyId#InsuranceCompanyId#DamageTypeId#InstructionTypeId#Number#ClaimReferenceNumber#InstructionDate#DateOfLoss#LossData.LossLocationAddress#Policy.RiskLocation.Address#Policy.RiskLocation.City#Policy.RiskLocation.PostalCode#Policy.RiskLocation.Province#Policy.RiskLocation.Country#Assicurato#Contraente#Danneggiato#Agenzia
+processing ./dmn/test/Opening-CheckLinkPA1-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	StartClaimInterval = 1
+	ContractorType = 1
+eseguo Dmn
+Risultati
+ServizioScelto:System.String=Nessun Servizio
+processing ./dmn/test/UserQualifications-NonSeq-005.dmn
+inputList = 
+	User
+outputList = 
+	Task
+inputList = 
+	User
+outputList = 
+	Task
+testScenario not found
+imposto dati input generici  
+inputList = 
+	User
+outputList = 
+	Task
+	User = 1
+eseguo Dmn
+Risultati
+Task:System.String=
+processing ./dmn/test/Opening-autoChooseService-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+testScenario found
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+testInput = 
+	Company = EXPERTA
+	InsuranceCompany = GEN
+	DamageType = AC
+	RequestedAmount = 300
+	RicercaDelGuasto = false
+	ContractorType = PRI
+	LossLocation = 
+	InsuredPhones = 
+	SelfCareExecuted = false
+eseguo Dmn
+Risultati =
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+processing ./dmn/test/Opening-checkCompletedData-017.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+	AdministrativeRegularity
+outputList = 
+	RequiredFields
+	InstructionCreation
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+	AdministrativeRegularity
+outputList = 
+	RequiredFields
+	InstructionCreation
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+	AdministrativeRegularity
+outputList = 
+	RequiredFields
+	InstructionCreation
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	InstructionType = 1
+	AdministrativeRegularity = 1
+eseguo Dmn
+Risultati
+RequiredFields:System.String=
+InstructionCreation:System.String=Manuale
+processing ./dmn/test/SubProcess-SLA-004.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Process
+outputList = 
+	SLA Phase
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Process
+outputList = 
+	SLA Phase
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Process
+outputList = 
+	SLA Phase
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	Process = 1
+eseguo Dmn
+Risultati
+SLA_Fase:System.Int32=0
+processing ./dmn/test/UserQualifications-Global-012.dmn
+inputList = 
+	Task
+	Company
+	InsuranceCompany
+	DamageType
+	ContractorType
+	InstructionType
+	Agency
+	Agency
+	Reserve
+	Authority
+	Broker
+	Broker
+	Administrator
+	Administrator
+	Province
+	InsuranceCompanyPortal
+outputList = 
+	user
+	InsuranceCompanyPriority
+	ExclusiveAgency
+	ExclusiveAdministrator
+	ExclusiveBroker
+	ExclusiveInsuredContractor
+inputList = 
+	Task
+	Company
+	InsuranceCompany
+	DamageType
+	ContractorType
+	InstructionType
+	Agency
+	Agency
+	Reserve
+	Authority
+	Broker
+	Broker
+	Administrator
+	Administrator
+	Province
+	InsuranceCompanyPortal
+outputList = 
+	user
+	InsuranceCompanyPriority
+	ExclusiveAgency
+	ExclusiveAdministrator
+	ExclusiveBroker
+	ExclusiveInsuredContractor
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Task
+	Company
+	InsuranceCompany
+	DamageType
+	ContractorType
+	InstructionType
+	Agency
+	Agency
+	Reserve
+	Authority
+	Broker
+	Broker
+	Administrator
+	Administrator
+	Province
+	InsuranceCompanyPortal
+outputList = 
+	user
+	InsuranceCompanyPriority
+	ExclusiveAgency
+	ExclusiveAdministrator
+	ExclusiveBroker
+	ExclusiveInsuredContractor
+	Task = 1
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	ContractorType = 1
+	InstructionType = 1
+	Agency = 1
+	Reserve = 1
+	Authority = 1
+	Broker = 1
+	Administrator = 1
+	Province = 1
+	InsuranceCompanyPortal = 1
+eseguo Dmn
+Risultati
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta servizio
+testScenario found
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta servizio
+testInput = 
+	Azienda = A&A
+	Compagnia = AXA
+	DannoTipo = Fenomeno Elettrico
+	AmmontareDanno = 450
+	CESIpositivo1500m = false
+	ContraenteTipo = Privato
+	LuogoSinistro = via
+	UbicazioneDelRischio = via
+	TelefonoAssicurato = 123
+	NumeroBeni = 1
+	Agenzia = 1313
+	SelfCareEseguito = true
+eseguo Dmn
+Risultati =
+error: executeDmnTestScenario error: The given key 'Scelta_servizio' was not present in the dictionary.
+end date 15/03/2024 12:40:41
+start date 15/03/2024 12:41:27
+processing ./dmn/test/Task-SLA-003.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	Task = 1
+eseguo Dmn
+Risultati
+SLA_TASK:System.Int32=0
+Task_Weight:System.Double=0
+SLA_Appointment:System.Int32=0
+processing ./dmn/test/Opening-checkNullValues-010.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	InstructionType = 1
+eseguo Dmn
+Risultati
+RequiredFields:System.String=CompanyId#InsuranceCompanyId#DamageTypeId#InstructionTypeId#Number#ClaimReferenceNumber#InstructionDate#DateOfLoss#LossData.LossLocationAddress#Policy.RiskLocation.Address#Policy.RiskLocation.City#Policy.RiskLocation.PostalCode#Policy.RiskLocation.Province#Policy.RiskLocation.Country#Assicurato#Contraente#Danneggiato#Agenzia
+processing ./dmn/test/Opening-CheckLinkPA1-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	StartClaimInterval = 1
+	ContractorType = 1
+eseguo Dmn
+Risultati
+ServizioScelto:System.String=Nessun Servizio
+processing ./dmn/test/UserQualifications-NonSeq-005.dmn
+inputList = 
+	User
+outputList = 
+	Task
+inputList = 
+	User
+outputList = 
+	Task
+testScenario not found
+imposto dati input generici  
+inputList = 
+	User
+outputList = 
+	Task
+	User = 1
+eseguo Dmn
+Risultati
+Task:System.String=
+processing ./dmn/test/Opening-autoChooseService-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+testScenario found
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+testInput = 
+	Company = EXPERTA
+	InsuranceCompany = GEN
+	DamageType = AC
+	RequestedAmount = 300
+	RicercaDelGuasto = false
+	ContractorType = PRI
+	LossLocation = 
+	InsuredPhones = 
+	SelfCareExecuted = false
+eseguo Dmn
+Risultati =
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+processing ./dmn/test/Opening-checkCompletedData-017.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+	AdministrativeRegularity
+outputList = 
+	RequiredFields
+	InstructionCreation
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+	AdministrativeRegularity
+outputList = 
+	RequiredFields
+	InstructionCreation
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+	AdministrativeRegularity
+outputList = 
+	RequiredFields
+	InstructionCreation
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	InstructionType = 1
+	AdministrativeRegularity = 1
+eseguo Dmn
+Risultati
+RequiredFields:System.String=
+InstructionCreation:System.String=Manuale
+processing ./dmn/test/SubProcess-SLA-004.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Process
+outputList = 
+	SLA Phase
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Process
+outputList = 
+	SLA Phase
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Process
+outputList = 
+	SLA Phase
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	Process = 1
+eseguo Dmn
+Risultati
+SLA_Fase:System.Int32=0
+processing ./dmn/test/UserQualifications-Global-012.dmn
+inputList = 
+	Task
+	Company
+	InsuranceCompany
+	DamageType
+	ContractorType
+	InstructionType
+	Agency
+	Agency
+	Reserve
+	Authority
+	Broker
+	Broker
+	Administrator
+	Administrator
+	Province
+	InsuranceCompanyPortal
+outputList = 
+	user
+	InsuranceCompanyPriority
+	ExclusiveAgency
+	ExclusiveAdministrator
+	ExclusiveBroker
+	ExclusiveInsuredContractor
+inputList = 
+	Task
+	Company
+	InsuranceCompany
+	DamageType
+	ContractorType
+	InstructionType
+	Agency
+	Agency
+	Reserve
+	Authority
+	Broker
+	Broker
+	Administrator
+	Administrator
+	Province
+	InsuranceCompanyPortal
+outputList = 
+	user
+	InsuranceCompanyPriority
+	ExclusiveAgency
+	ExclusiveAdministrator
+	ExclusiveBroker
+	ExclusiveInsuredContractor
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Task
+	Company
+	InsuranceCompany
+	DamageType
+	ContractorType
+	InstructionType
+	Agency
+	Agency
+	Reserve
+	Authority
+	Broker
+	Broker
+	Administrator
+	Administrator
+	Province
+	InsuranceCompanyPortal
+outputList = 
+	user
+	InsuranceCompanyPriority
+	ExclusiveAgency
+	ExclusiveAdministrator
+	ExclusiveBroker
+	ExclusiveInsuredContractor
+	Task = 1
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	ContractorType = 1
+	InstructionType = 1
+	Agency = 1
+	Reserve = 1
+	Authority = 1
+	Broker = 1
+	Administrator = 1
+	Province = 1
+	InsuranceCompanyPortal = 1
+eseguo Dmn
+Risultati
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+testScenario found
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+testInput = 
+	Azienda = A&A
+	Compagnia = AXA
+	DannoTipo = Fenomeno Elettrico
+	AmmontareDanno = 450
+	CESIpositivo1500m = false
+	ContraenteTipo = Privato
+	LuogoSinistro = via
+	UbicazioneDelRischio = via
+	TelefonoAssicurato = 123
+	NumeroBeni = 1
+	Agenzia = 1313
+	SelfCareEseguito = true
+eseguo Dmn
+Risultati =
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta servizio
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta servizio
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	RequestedAmount = 1
+	Reserve = 1
+	CESIPositive1500m = 1
+	ContractorType = 1
+	LossLocation = 1
+	NumberOfPreviousClaims = 1
+	AdministrativeRegularity = 1
+error: executeDmn error: Can't cast value to target type: Boolean. Value is: 1 of type String
+end date 15/03/2024 12:41:29
+start date 15/03/2024 12:43:51
+processing ./dmn/test/Task-SLA-003.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	Task = 1
+eseguo Dmn
+Risultati
+SLA_TASK:System.Int32=0
+Task_Weight:System.Double=0
+SLA_Appointment:System.Int32=0
+processing ./dmn/test/Opening-checkNullValues-010.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	InstructionType = 1
+eseguo Dmn
+Risultati
+RequiredFields:System.String=CompanyId#InsuranceCompanyId#DamageTypeId#InstructionTypeId#Number#ClaimReferenceNumber#InstructionDate#DateOfLoss#LossData.LossLocationAddress#Policy.RiskLocation.Address#Policy.RiskLocation.City#Policy.RiskLocation.PostalCode#Policy.RiskLocation.Province#Policy.RiskLocation.Country#Assicurato#Contraente#Danneggiato#Agenzia
+processing ./dmn/test/Opening-CheckLinkPA1-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	StartClaimInterval = 1
+	ContractorType = 1
+eseguo Dmn
+Risultati
+ServizioScelto:System.String=Nessun Servizio
+processing ./dmn/test/UserQualifications-NonSeq-005.dmn
+inputList = 
+	User
+outputList = 
+	Task
+inputList = 
+	User
+outputList = 
+	Task
+testScenario not found
+imposto dati input generici  
+inputList = 
+	User
+outputList = 
+	Task
+	User = 1
+eseguo Dmn
+Risultati
+Task:System.String=
+processing ./dmn/test/Opening-autoChooseService-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+testScenario found
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+testInput = 
+	Company = EXPERTA
+	InsuranceCompany = GEN
+	DamageType = AC
+	RequestedAmount = 300
+	RicercaDelGuasto = false
+	ContractorType = PRI
+	LossLocation = 
+	InsuredPhones = 
+	SelfCareExecuted = false
+eseguo Dmn
+Risultati =
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+processing ./dmn/test/Opening-checkCompletedData-017.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+	AdministrativeRegularity
+outputList = 
+	RequiredFields
+	InstructionCreation
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+	AdministrativeRegularity
+outputList = 
+	RequiredFields
+	InstructionCreation
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+	AdministrativeRegularity
+outputList = 
+	RequiredFields
+	InstructionCreation
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	InstructionType = 1
+	AdministrativeRegularity = 1
+eseguo Dmn
+Risultati
+RequiredFields:System.String=
+InstructionCreation:System.String=Manuale
+processing ./dmn/test/SubProcess-SLA-004.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Process
+outputList = 
+	SLA Phase
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Process
+outputList = 
+	SLA Phase
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Process
+outputList = 
+	SLA Phase
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	Process = 1
+eseguo Dmn
+Risultati
+SLA_Fase:System.Int32=0
+processing ./dmn/test/UserQualifications-Global-012.dmn
+inputList = 
+	Task
+	Company
+	InsuranceCompany
+	DamageType
+	ContractorType
+	InstructionType
+	Agency
+	Agency
+	Reserve
+	Authority
+	Broker
+	Broker
+	Administrator
+	Administrator
+	Province
+	InsuranceCompanyPortal
+outputList = 
+	user
+	InsuranceCompanyPriority
+	ExclusiveAgency
+	ExclusiveAdministrator
+	ExclusiveBroker
+	ExclusiveInsuredContractor
+inputList = 
+	Task
+	Company
+	InsuranceCompany
+	DamageType
+	ContractorType
+	InstructionType
+	Agency
+	Agency
+	Reserve
+	Authority
+	Broker
+	Broker
+	Administrator
+	Administrator
+	Province
+	InsuranceCompanyPortal
+outputList = 
+	user
+	InsuranceCompanyPriority
+	ExclusiveAgency
+	ExclusiveAdministrator
+	ExclusiveBroker
+	ExclusiveInsuredContractor
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Task
+	Company
+	InsuranceCompany
+	DamageType
+	ContractorType
+	InstructionType
+	Agency
+	Agency
+	Reserve
+	Authority
+	Broker
+	Broker
+	Administrator
+	Administrator
+	Province
+	InsuranceCompanyPortal
+outputList = 
+	user
+	InsuranceCompanyPriority
+	ExclusiveAgency
+	ExclusiveAdministrator
+	ExclusiveBroker
+	ExclusiveInsuredContractor
+	Task = 1
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	ContractorType = 1
+	InstructionType = 1
+	Agency = 1
+	Reserve = 1
+	Authority = 1
+	Broker = 1
+	Administrator = 1
+	Province = 1
+	InsuranceCompanyPortal = 1
+eseguo Dmn
+Risultati
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+testScenario found
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+testInput = 
+	Azienda = A&A
+	Compagnia = AXA
+	DannoTipo = Fenomeno Elettrico
+	AmmontareDanno = 450
+	CESIpositivo1500m = false
+	ContraenteTipo = Privato
+	LuogoSinistro = via
+	UbicazioneDelRischio = via
+	TelefonoAssicurato = 123
+	NumeroBeni = 1
+	Agenzia = 1313
+	SelfCareEseguito = true
+eseguo Dmn
+Risultati =
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	RequestedAmount = 1
+	Reserve = 1
+	CESIPositive1500m = 1
+	ContractorType = 1
+	LossLocation = 1
+	NumberOfPreviousClaims = 1
+	AdministrativeRegularity = 1
+error: executeDmn error: Can't cast value to target type: Boolean. Value is: 1 of type String
+end date 15/03/2024 12:43:52
+start date 15/03/2024 12:45:55
+processing ./dmn/test/Task-SLA-003.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	Task = 1
+eseguo Dmn
+Risultati
+SLA_TASK:System.Int32=0
+Task_Weight:System.Double=0
+SLA_Appointment:System.Int32=0
+processing ./dmn/test/Opening-checkNullValues-010.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	InstructionType = 1
+eseguo Dmn
+Risultati
+RequiredFields:System.String=CompanyId#InsuranceCompanyId#DamageTypeId#InstructionTypeId#Number#ClaimReferenceNumber#InstructionDate#DateOfLoss#LossData.LossLocationAddress#Policy.RiskLocation.Address#Policy.RiskLocation.City#Policy.RiskLocation.PostalCode#Policy.RiskLocation.Province#Policy.RiskLocation.Country#Assicurato#Contraente#Danneggiato#Agenzia
+processing ./dmn/test/Opening-CheckLinkPA1-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	StartClaimInterval = 1
+	ContractorType = 1
+eseguo Dmn
+Risultati
+ServizioScelto:System.String=Nessun Servizio
+processing ./dmn/test/UserQualifications-NonSeq-005.dmn
+inputList = 
+	User
+outputList = 
+	Task
+inputList = 
+	User
+outputList = 
+	Task
+testScenario not found
+imposto dati input generici  
+inputList = 
+	User
+outputList = 
+	Task
+	User = 1
+eseguo Dmn
+Risultati
+Task:System.String=
+processing ./dmn/test/Opening-autoChooseService-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+testScenario found
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+testInput = 
+	Company = EXPERTA
+	InsuranceCompany = GEN
+	DamageType = AC
+	RequestedAmount = 300
+	RicercaDelGuasto = false
+	ContractorType = PRI
+	LossLocation = 
+	InsuredPhones = 
+	SelfCareExecuted = false
+eseguo Dmn
+Risultati =
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+processing ./dmn/test/Opening-checkCompletedData-017.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+	AdministrativeRegularity
+outputList = 
+	RequiredFields
+	InstructionCreation
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+	AdministrativeRegularity
+outputList = 
+	RequiredFields
+	InstructionCreation
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+	AdministrativeRegularity
+outputList = 
+	RequiredFields
+	InstructionCreation
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	InstructionType = 1
+	AdministrativeRegularity = 1
+eseguo Dmn
+Risultati
+RequiredFields:System.String=
+InstructionCreation:System.String=Manuale
+processing ./dmn/test/SubProcess-SLA-004.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Process
+outputList = 
+	SLA Phase
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Process
+outputList = 
+	SLA Phase
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Process
+outputList = 
+	SLA Phase
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	Process = 1
+eseguo Dmn
+Risultati
+SLA_Fase:System.Int32=0
+processing ./dmn/test/UserQualifications-Global-012.dmn
+inputList = 
+	Task
+	Company
+	InsuranceCompany
+	DamageType
+	ContractorType
+	InstructionType
+	Agency
+	Agency
+	Reserve
+	Authority
+	Broker
+	Broker
+	Administrator
+	Administrator
+	Province
+	InsuranceCompanyPortal
+outputList = 
+	user
+	InsuranceCompanyPriority
+	ExclusiveAgency
+	ExclusiveAdministrator
+	ExclusiveBroker
+	ExclusiveInsuredContractor
+inputList = 
+	Task
+	Company
+	InsuranceCompany
+	DamageType
+	ContractorType
+	InstructionType
+	Agency
+	Agency
+	Reserve
+	Authority
+	Broker
+	Broker
+	Administrator
+	Administrator
+	Province
+	InsuranceCompanyPortal
+outputList = 
+	user
+	InsuranceCompanyPriority
+	ExclusiveAgency
+	ExclusiveAdministrator
+	ExclusiveBroker
+	ExclusiveInsuredContractor
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Task
+	Company
+	InsuranceCompany
+	DamageType
+	ContractorType
+	InstructionType
+	Agency
+	Agency
+	Reserve
+	Authority
+	Broker
+	Broker
+	Administrator
+	Administrator
+	Province
+	InsuranceCompanyPortal
+outputList = 
+	user
+	InsuranceCompanyPriority
+	ExclusiveAgency
+	ExclusiveAdministrator
+	ExclusiveBroker
+	ExclusiveInsuredContractor
+	Task = 1
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	ContractorType = 1
+	InstructionType = 1
+	Agency = 1
+	Reserve = 1
+	Authority = 1
+	Broker = 1
+	Administrator = 1
+	Province = 1
+	InsuranceCompanyPortal = 1
+eseguo Dmn
+Risultati
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+testScenario found
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+testInput = 
+	Azienda = A&A
+	Compagnia = AXA
+	DannoTipo = Fenomeno Elettrico
+	AmmontareDanno = 450
+	CESIpositivo1500m = false
+	ContraenteTipo = Privato
+	LuogoSinistro = via
+	UbicazioneDelRischio = via
+	TelefonoAssicurato = 123
+	NumeroBeni = 1
+	Agenzia = 1313
+	SelfCareEseguito = true
+eseguo Dmn
+Risultati =
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+testScenario found
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+testInput = 
+	Company = A&A
+	InsuranceCompany = VIT
+	DamageType = DE 
+	RequestedAmount = 1001
+	Reserve = 
+error: executeDmnTestScenario error: Can't cast value to target type: Int32. Value is:  of type String
+end date 15/03/2024 12:45:56
+start date 15/03/2024 12:46:36
+processing ./dmn/test/Task-SLA-003.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	SLA TASK
+	Task Weight
+	SLA Appointment
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	Task = 1
+eseguo Dmn
+Risultati
+SLA_TASK:System.Int32=0
+Task_Weight:System.Double=0
+SLA_Appointment:System.Int32=0
+processing ./dmn/test/Opening-checkNullValues-010.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+outputList = 
+	RequiredFields
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	InstructionType = 1
+eseguo Dmn
+Risultati
+RequiredFields:System.String=CompanyId#InsuranceCompanyId#DamageTypeId#InstructionTypeId#Number#ClaimReferenceNumber#InstructionDate#DateOfLoss#LossData.LossLocationAddress#Policy.RiskLocation.Address#Policy.RiskLocation.City#Policy.RiskLocation.PostalCode#Policy.RiskLocation.Province#Policy.RiskLocation.Country#Assicurato#Contraente#Danneggiato#Agenzia
+processing ./dmn/test/Opening-CheckLinkPA1-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServizioScelto
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	StartClaimInterval = 1
+	ContractorType = 1
+eseguo Dmn
+Risultati
+ServizioScelto:System.String=Nessun Servizio
+processing ./dmn/test/UserQualifications-NonSeq-005.dmn
+inputList = 
+	User
+outputList = 
+	Task
+inputList = 
+	User
+outputList = 
+	Task
+testScenario not found
+imposto dati input generici  
+inputList = 
+	User
+outputList = 
+	Task
+	User = 1
+eseguo Dmn
+Risultati
+Task:System.String=
+processing ./dmn/test/Opening-autoChooseService-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+testScenario found
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+testInput = 
+	Company = EXPERTA
+	InsuranceCompany = GEN
+	DamageType = AC
+	RequestedAmount = 300
+	RicercaDelGuasto = false
+	ContractorType = PRI
+	LossLocation = 
+	InsuredPhones = 
+	SelfCareExecuted = false
+eseguo Dmn
+Risultati =
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESI
+	RicercaDelGuasto
+	SharePointTag
+	ClaimTag
+	InsuredItemType
+	RequestedFastSettlement
+	Agency
+	ContractorType
+	LossLocation
+	InsuredPhones
+	SelfCareExecuted
+outputList = 
+	Scelta_Servizio
+processing ./dmn/test/Opening-checkCompletedData-017.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+	AdministrativeRegularity
+outputList = 
+	RequiredFields
+	InstructionCreation
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+	AdministrativeRegularity
+outputList = 
+	RequiredFields
+	InstructionCreation
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	InstructionType
+	AdministrativeRegularity
+outputList = 
+	RequiredFields
+	InstructionCreation
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	InstructionType = 1
+	AdministrativeRegularity = 1
+eseguo Dmn
+Risultati
+RequiredFields:System.String=
+InstructionCreation:System.String=Manuale
+processing ./dmn/test/SubProcess-SLA-004.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Process
+outputList = 
+	SLA Phase
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Process
+outputList = 
+	SLA Phase
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Process
+outputList = 
+	SLA Phase
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	Process = 1
+eseguo Dmn
+Risultati
+SLA_Fase:System.Int32=0
+processing ./dmn/test/UserQualifications-Global-012.dmn
+inputList = 
+	Task
+	Company
+	InsuranceCompany
+	DamageType
+	ContractorType
+	InstructionType
+	Agency
+	Agency
+	Reserve
+	Authority
+	Broker
+	Broker
+	Administrator
+	Administrator
+	Province
+	InsuranceCompanyPortal
+outputList = 
+	user
+	InsuranceCompanyPriority
+	ExclusiveAgency
+	ExclusiveAdministrator
+	ExclusiveBroker
+	ExclusiveInsuredContractor
+inputList = 
+	Task
+	Company
+	InsuranceCompany
+	DamageType
+	ContractorType
+	InstructionType
+	Agency
+	Agency
+	Reserve
+	Authority
+	Broker
+	Broker
+	Administrator
+	Administrator
+	Province
+	InsuranceCompanyPortal
+outputList = 
+	user
+	InsuranceCompanyPriority
+	ExclusiveAgency
+	ExclusiveAdministrator
+	ExclusiveBroker
+	ExclusiveInsuredContractor
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Task
+	Company
+	InsuranceCompany
+	DamageType
+	ContractorType
+	InstructionType
+	Agency
+	Agency
+	Reserve
+	Authority
+	Broker
+	Broker
+	Administrator
+	Administrator
+	Province
+	InsuranceCompanyPortal
+outputList = 
+	user
+	InsuranceCompanyPriority
+	ExclusiveAgency
+	ExclusiveAdministrator
+	ExclusiveBroker
+	ExclusiveInsuredContractor
+	Task = 1
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	ContractorType = 1
+	InstructionType = 1
+	Agency = 1
+	Reserve = 1
+	Authority = 1
+	Broker = 1
+	Administrator = 1
+	Province = 1
+	InsuranceCompanyPortal = 1
+eseguo Dmn
+Risultati
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+testScenario found
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+testInput = 
+	Azienda = A&A
+	Compagnia = AXA
+	DannoTipo = Fenomeno Elettrico
+	AmmontareDanno = 450
+	CESIpositivo1500m = false
+	ContraenteTipo = Privato
+	LuogoSinistro = via
+	UbicazioneDelRischio = via
+	TelefonoAssicurato = 123
+	NumeroBeni = 1
+	Agenzia = 1313
+	SelfCareEseguito = true
+eseguo Dmn
+Risultati =
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+testScenario found
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+testInput = 
+	Company = A&A
+	InsuranceCompany = VIT
+	DamageType = DE 
+	RequestedAmount = 1001
+	CESIPositive1500m = AF
+	ContractorType = PRI
+	LossLocation = vi
+	InsuredItemType = 
+	InsuredPhones = true
+eseguo Dmn
+Risultati =
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+processing ./dmn/test/new_UserQualifications-MasterGlobalDef304.dmn
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+testScenario found
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+testInput = 
+	Task = ED
+	Azienda = C&P
+	Compagnia = GEN
+	DannoTipo = Acqua Condotta
+	ContraenteTipo = AZI
+	TipoDiIncarico = PER
+	Agenzia = 
+	Riserva = 20001
+	Authority = 300000
+	Broker = 
+	Amministratore = 
+	Provincia = MI
+eseguo Dmn
+Risultati =
+testInput = 
+	Task = ED
+	Azienda = A&A
+	Compagnia = ISA
+	DannoTipo = Acqua Condotta
+	ContraenteTipo = AZI
+	TipoDiIncarico = PER
+	Agenzia = 
+	Riserva = 20001
+	Authority = 300000
+	Broker = 
+	Amministratore = 
+	Provincia = MI
+eseguo Dmn
+Risultati =
+testInput = 
+	Task = EE
+	Azienda = EXPERTA
+	Compagnia = ALN
+	DannoTipo = Eventi naturali
+	TipoDiIncarico = PERIN
+	Riserva = 10000
+	Authority = 1000
+eseguo Dmn
+Risultati =
+testInput = 
+	Task = ED
+	Azienda = C&P
+	Compagnia = AIG
+	DannoTipo = Danno Elettrico
+	TipoDiIncarico = PER
+	Riserva = 20001
+	Authority = 300000
+	Provincia = VA
+eseguo Dmn
+Risultati =
+testInput = 
+	Task = ACC
+	Azienda = VERING
+	Compagnia = ISA
+	DannoTipo = Danno Elettrico
+	TipoDiIncarico = CTP
+eseguo Dmn
+Risultati =
+testInput = 
+	Task = MCC
+	Azienda = VERING
+	Compagnia = UFO
+	DannoTipo = Rottura Piatti
+	TipoDiIncarico = CTP
+	Provincia = CZ
+eseguo Dmn
+Risultati =
+testInput = 
+	Task = SR
+	Azienda = EXPERTA
+	Compagnia = AXA
+	DannoTipo = Atto vandalico
+	Riserva = -1
+	Authority = 200
+	Provincia = RM
+eseguo Dmn
+Risultati =
+testInput = 
+	Task = SR
+	Azienda = EXPERTA
+	Compagnia = AXA
+	DannoTipo = Atto vandalico
+	Riserva = -1
+	Authority = 3000
+	Provincia = FI
+eseguo Dmn
+Risultati =
+testInput = 
+	Task = RF
+	Azienda = EXPERTA
+	Compagnia = VIT
+	DannoTipo = Responsabilità civile
+eseguo Dmn
+Risultati =
+testInput = 
+	Task = MSC
+	Azienda = EXPERTA
+	Compagnia = VIT
+	DannoTipo = Responsabilità civile
+eseguo Dmn
+Risultati =
+testInput = 
+	Task = EE
+	Azienda = VERING
+	Compagnia = RMA
+	DannoTipo = Responsabilità civile
+	Riserva = 1
+	Authority = 1
+eseguo Dmn
+Risultati =
+inputList = 
+	Task
+	Azienda
+	Compagnia
+	DannoTipo
+	ContraenteTipo
+	TipoDiIncarico
+	Agenzia
+	Agenzia
+	Riserva
+	Authority
+	Broker
+	Broker
+	Amministratore
+	Amministratore
+	Provincia
+	PortaleDiProvenienza
+outputList = 
+	user
+	PrioritaCompagnia
+	AgenziaEsclusiva
+	AmministratoreEsclusivo
+	contraente o assicurato in esclusiva
+processing ./dmn/test/Trigger-Task+Events-006.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	ExpirationInHours
+	NumberOfExecutions
+	NextEventOnExpiration
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	ExpirationInHours
+	NumberOfExecutions
+	NextEventOnExpiration
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Task
+outputList = 
+	ExpirationInHours
+	NumberOfExecutions
+	NextEventOnExpiration
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	Task = 1
+eseguo Dmn
+Risultati
+ExpirationInHours:System.Int32=0
+NumberOfExecutions:System.Int32=0
+NextEventOnExpiration:System.String=
+processing ./dmn/test/Opening-checkLinkSelfCare-004.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Reserve
+	CESI
+	ContractorType
+	RiskAddress
+	InsuredPhones
+	NumberOfInsuredItems
+	Agency
+outputList = 
+	Invio link
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Reserve
+	CESI
+	ContractorType
+	RiskAddress
+	InsuredPhones
+	NumberOfInsuredItems
+	Agency
+outputList = 
+	Invio link
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	Reserve
+	CESI
+	ContractorType
+	RiskAddress
+	InsuredPhones
+	NumberOfInsuredItems
+	Agency
+outputList = 
+	Invio link
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	Reserve = 1
+	CESI = 1
+	ContractorType = 1
+	RiskAddress = 1
+	InsuredPhones = 1
+	NumberOfInsuredItems = 1
+	Agency = 1
+eseguo Dmn
+Risultati
+Scelta_servizio:System.String=Nessun Servizio
+processing ./dmn/test/Opening-triageRiparazioni-007.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServiceChoosen
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServiceChoosen
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	StartClaimInterval
+	ContractorType
+outputList = 
+	ServiceChoosen
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	StartClaimInterval = 1
+	ContractorType = 1
+eseguo Dmn
+Risultati
+ServiceChoosen:System.String=RiparazioneNonPrevista
+end date 15/03/2024 12:46:38
+start date 06/04/2024 00:11:22
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	RequestedAmount = 1
+	Reserve = 1
+	CESIPositive1500m = 1
+	ContractorType = 1
+	LossLocation = 1
+	NumberOfPreviousClaims = 1
+	AdministrativeRegularity = 1
+error: executeDmn error: Can't cast value to target type: Boolean. Value is: 1 of type String
+end date 06/04/2024 00:11:23
+start date 06/04/2024 00:15:16
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+error: There is an error in XML document (2, 2).
+end date 06/04/2024 00:15:17
+start date 06/04/2024 00:27:52
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+error: There is an error in XML document (2, 2).
+end date 06/04/2024 00:27:52
+start date 06/04/2024 00:30:59
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+filename: ./dmn/test/Opening-triagePCE-008.dmn
+error: There is an error in XML document (2, 2).
+end date 06/04/2024 00:31:00
+start date 06/04/2024 00:32:15
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+filename: ./dmn/test/Opening-triagePCE-008.dmn
+start date 11/04/2024 11:50:42
+processing ./dmn/test/Opening-triagePCE-008.dmn
+start date 11/04/2024 12:25:00
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+filename: ./dmn/test/Opening-triagePCE-008.dmn
+myDmnObject: net.adamec.lib.common.dmn.engine.engine.execution.context.DmnExecutionContext
+end date 11/04/2024 12:25:01
+start date 11/04/2024 12:25:22
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+filename: ./dmn/test/Opening-triagePCE-008.dmn
+start date 11/04/2024 12:57:58
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+filename: ./dmn/test/Opening-triagePCE-008.dmn
+myDmnObject: TriagePCE : DmnDecisionTable
+end date 11/04/2024 12:57:58
+start date 11/04/2024 13:00:58
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+filename: ./dmn/test/Opening-triagePCE-008.dmn
+myDmnObject: System.Func`1[System.Collections.Generic.IReadOnlyCollection`1[net.adamec.lib.common.dmn.engine.engine.decisions.IDmnDecision]]
+end date 11/04/2024 13:00:59
+start date 11/04/2024 13:01:56
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+filename: ./dmn/test/Opening-triagePCE-008.dmn
+myDmnObject: System.Collections.Generic.List`1[net.adamec.lib.common.dmn.engine.engine.decisions.IDmnDecision]
+end date 11/04/2024 13:01:57
+start date 11/04/2024 13:02:58
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+filename: ./dmn/test/Opening-triagePCE-008.dmn
+myDmnObject: System.Collections.Generic.List`1[net.adamec.lib.common.dmn.engine.engine.decisions.IDmnDecision]
+end date 11/04/2024 13:02:59
+start date 11/04/2024 13:03:27
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+filename: ./dmn/test/Opening-triagePCE-008.dmn
+error: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+end date 11/04/2024 13:03:27
+start date 11/04/2024 13:04:42
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+filename: ./dmn/test/Opening-triagePCE-008.dmn
+myDmnObject: System.Collections.Generic.Dictionary`2[System.String,net.adamec.lib.common.dmn.engine.engine.decisions.IDmnDecision]
+end date 11/04/2024 13:04:43
+start date 11/04/2024 13:09:43
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+filename: ./dmn/test/Opening-triagePCE-008.dmn
+myDmnObject: System.Collections.Generic.List`1[net.adamec.lib.common.dmn.engine.engine.definition.IDmnVariable]
+end date 11/04/2024 13:09:50
+start date 11/04/2024 13:12:23
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+filename: ./dmn/test/Opening-triagePCE-008.dmn
+start date 11/04/2024 13:53:46
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputTypes = 
+	string
+	string
+	string
+	integer
+	integer
+	string
+	string
+	string
+	integer
+	boolean
+	string
+	string
+	boolean
+types System.Collections.Generic.List`1[System.String]
+end date 11/04/2024 13:53:47
+start date 11/04/2024 14:17:10
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputTypes = 
+	string
+	string
+	string
+	integer
+	integer
+	string
+	string
+	string
+	integer
+	boolean
+	string
+	string
+	boolean
+end date 11/04/2024 14:17:11
+start date 11/04/2024 14:20:50
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+"A&A"
+"VIT"
+"DE" 
+[1000..8999]
+
+"AF"
+"PRI"
+not(null)
+
+
+
+
+true
+"SopralluogoPCE"
+"A&A"
+"VIT"
+"DE" 
+[3000..8999]
+
+"PO"
+
+not(null)
+
+
+
+
+true
+"SopralluogoPCE"
+"A&A"
+"VIT"
+"DE" 
+[5000..8999]
+
+"PE"
+
+not(null)
+
+
+
+
+true
+"SopralluogoPCE"
+"A&A"
+"AXA" 
+"DE" 
+[1000..8999]
+
+"AF"
+
+not(null)
+
+
+not("1212")
+
+true
+"SopralluogoPCE"
+"A&A"
+"AXA" 
+"DE" 
+[3000..8999]
+
+"PO"
+
+not(null)
+
+
+not("1212")
+
+true
+"SopralluogoPCE"
+"A&A"
+"AXA" 
+"DE" 
+[5000..8999]
+
+"PE"
+
+not(null)
+
+
+not("1212")
+
+true
+"SopralluogoPCE"
+"A&A"
+"GEN", "CAT"
+"DE" 
+[1500..8999]
+
+"AF"
+"PRI", "NEG", "UFF"
+not(null)
+
+
+
+
+true
+"SopralluogoPCE"
+"A&A"
+"GEN", "CAT"
+"DE" 
+[1500..8999]
+
+"PO"
+"PRI", "NEG", "UFF"
+not(null)
+
+
+
+
+true
+"SopralluogoPCE"
+"A&A"
+"GEN", "CAT"
+"DE" 
+[5000..8999]
+
+"PE"
+"PRI", "NEG", "UFF"
+not(null)
+
+
+
+
+true
+"SopralluogoPCE"
+"A&A","EXPERTA"
+"AVI", "ZUR", "HEL"
+"DE" 
+[0..8999]
+
+
+
+not(null)
+
+
+
+"SOF"
+true
+"SopralluogoPCE"
+"A&A"
+"UNI"
+"DE" 
+
+[0..2999]
+
+not("AZI", "COM")
+not(null)
+<2
+true
+
+
+true
+"SopralluogoPCE"
+"EXPERTA"
+"ARC"
+"DE" 
+
+[0..2999]
+
+not("AZI", "COM")
+not(null)
+<2
+true
+
+
+true
+"SopralluogoPCE"
+"A&A"
+"ISA"
+"DE" 
+[1000..8999]
+
+"AF"
+
+not(null)
+
+
+
+
+true
+"SopralluogoPCE"
+"A&A"
+"ISA"
+"DE" 
+[1000..8999]
+
+"PO"
+
+not(null)
+
+
+
+
+true
+"SopralluogoPCE"
+"A&A"
+"ISA"
+"DE" 
+[1000..8999]
+
+"PE"
+
+not(null)
+
+
+
+
+true
+"SopralluogoPCE"
+
+
+
+
+
+
+
+
+
+
+
+
+
+"Nessun Servizio"
+inputTypes = 
+	string
+	string
+	string
+	integer
+	integer
+	string
+	string
+	string
+	integer
+	boolean
+	string
+	string
+	boolean
+"A&A"
+"VIT"
+"DE" 
+[1000..8999]
+
+"AF"
+"PRI"
+not(null)
+
+
+
+
+true
+"SopralluogoPCE"
+"A&A"
+"VIT"
+"DE" 
+[3000..8999]
+
+"PO"
+
+not(null)
+
+
+
+
+true
+"SopralluogoPCE"
+"A&A"
+"VIT"
+"DE" 
+[5000..8999]
+
+"PE"
+
+not(null)
+
+
+
+
+true
+"SopralluogoPCE"
+"A&A"
+"AXA" 
+"DE" 
+[1000..8999]
+
+"AF"
+
+not(null)
+
+
+not("1212")
+
+true
+"SopralluogoPCE"
+"A&A"
+"AXA" 
+"DE" 
+[3000..8999]
+
+"PO"
+
+not(null)
+
+
+not("1212")
+
+true
+"SopralluogoPCE"
+"A&A"
+"AXA" 
+"DE" 
+[5000..8999]
+
+"PE"
+
+not(null)
+
+
+not("1212")
+
+true
+"SopralluogoPCE"
+"A&A"
+"GEN", "CAT"
+"DE" 
+[1500..8999]
+
+"AF"
+"PRI", "NEG", "UFF"
+not(null)
+
+
+
+
+true
+"SopralluogoPCE"
+"A&A"
+"GEN", "CAT"
+"DE" 
+[1500..8999]
+
+"PO"
+"PRI", "NEG", "UFF"
+not(null)
+
+
+
+
+true
+"SopralluogoPCE"
+"A&A"
+"GEN", "CAT"
+"DE" 
+[5000..8999]
+
+"PE"
+"PRI", "NEG", "UFF"
+not(null)
+
+
+
+
+true
+"SopralluogoPCE"
+"A&A","EXPERTA"
+"AVI", "ZUR", "HEL"
+"DE" 
+[0..8999]
+
+
+
+not(null)
+
+
+
+"SOF"
+true
+"SopralluogoPCE"
+"A&A"
+"UNI"
+"DE" 
+
+[0..2999]
+
+not("AZI", "COM")
+not(null)
+<2
+true
+
+
+true
+"SopralluogoPCE"
+"EXPERTA"
+"ARC"
+"DE" 
+
+[0..2999]
+
+not("AZI", "COM")
+not(null)
+<2
+true
+
+
+true
+"SopralluogoPCE"
+"A&A"
+"ISA"
+"DE" 
+[1000..8999]
+
+"AF"
+
+not(null)
+
+
+
+
+true
+"SopralluogoPCE"
+"A&A"
+"ISA"
+"DE" 
+[1000..8999]
+
+"PO"
+
+not(null)
+
+
+
+
+true
+"SopralluogoPCE"
+"A&A"
+"ISA"
+"DE" 
+[1000..8999]
+
+"PE"
+
+not(null)
+
+
+
+
+true
+"SopralluogoPCE"
+
+
+
+
+
+
+
+
+
+
+
+
+
+"Nessun Servizio"
+end date 11/04/2024 14:20:50
+start date 11/04/2024 14:22:14
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+"A&A";"VIT";"DE" ;[1000..8999];;"AF";"PRI";not(null);;;;;true;"SopralluogoPCE";
+"A&A";"VIT";"DE" ;[3000..8999];;"PO";;not(null);;;;;true;"SopralluogoPCE";
+"A&A";"VIT";"DE" ;[5000..8999];;"PE";;not(null);;;;;true;"SopralluogoPCE";
+"A&A";"AXA" ;"DE" ;[1000..8999];;"AF";;not(null);;;not("1212");;true;"SopralluogoPCE";
+"A&A";"AXA" ;"DE" ;[3000..8999];;"PO";;not(null);;;not("1212");;true;"SopralluogoPCE";
+"A&A";"AXA" ;"DE" ;[5000..8999];;"PE";;not(null);;;not("1212");;true;"SopralluogoPCE";
+"A&A";"GEN", "CAT";"DE" ;[1500..8999];;"AF";"PRI", "NEG", "UFF";not(null);;;;;true;"SopralluogoPCE";
+"A&A";"GEN", "CAT";"DE" ;[1500..8999];;"PO";"PRI", "NEG", "UFF";not(null);;;;;true;"SopralluogoPCE";
+"A&A";"GEN", "CAT";"DE" ;[5000..8999];;"PE";"PRI", "NEG", "UFF";not(null);;;;;true;"SopralluogoPCE";
+"A&A","EXPERTA";"AVI", "ZUR", "HEL";"DE" ;[0..8999];;;;not(null);;;;"SOF";true;"SopralluogoPCE";
+"A&A";"UNI";"DE" ;;[0..2999];;not("AZI", "COM");not(null);<2;true;;;true;"SopralluogoPCE";
+"EXPERTA";"ARC";"DE" ;;[0..2999];;not("AZI", "COM");not(null);<2;true;;;true;"SopralluogoPCE";
+"A&A";"ISA";"DE" ;[1000..8999];;"AF";;not(null);;;;;true;"SopralluogoPCE";
+"A&A";"ISA";"DE" ;[1000..8999];;"PO";;not(null);;;;;true;"SopralluogoPCE";
+"A&A";"ISA";"DE" ;[1000..8999];;"PE";;not(null);;;;;true;"SopralluogoPCE";
+;;;;;;;;;;;;;"Nessun Servizio";
+inputTypes = 
+	string
+	string
+	string
+	integer
+	integer
+	string
+	string
+	string
+	integer
+	boolean
+	string
+	string
+	boolean
+"A&A";"VIT";"DE" ;[1000..8999];;"AF";"PRI";not(null);;;;;true;"SopralluogoPCE";
+"A&A";"VIT";"DE" ;[3000..8999];;"PO";;not(null);;;;;true;"SopralluogoPCE";
+"A&A";"VIT";"DE" ;[5000..8999];;"PE";;not(null);;;;;true;"SopralluogoPCE";
+"A&A";"AXA" ;"DE" ;[1000..8999];;"AF";;not(null);;;not("1212");;true;"SopralluogoPCE";
+"A&A";"AXA" ;"DE" ;[3000..8999];;"PO";;not(null);;;not("1212");;true;"SopralluogoPCE";
+"A&A";"AXA" ;"DE" ;[5000..8999];;"PE";;not(null);;;not("1212");;true;"SopralluogoPCE";
+"A&A";"GEN", "CAT";"DE" ;[1500..8999];;"AF";"PRI", "NEG", "UFF";not(null);;;;;true;"SopralluogoPCE";
+"A&A";"GEN", "CAT";"DE" ;[1500..8999];;"PO";"PRI", "NEG", "UFF";not(null);;;;;true;"SopralluogoPCE";
+"A&A";"GEN", "CAT";"DE" ;[5000..8999];;"PE";"PRI", "NEG", "UFF";not(null);;;;;true;"SopralluogoPCE";
+"A&A","EXPERTA";"AVI", "ZUR", "HEL";"DE" ;[0..8999];;;;not(null);;;;"SOF";true;"SopralluogoPCE";
+"A&A";"UNI";"DE" ;;[0..2999];;not("AZI", "COM");not(null);<2;true;;;true;"SopralluogoPCE";
+"EXPERTA";"ARC";"DE" ;;[0..2999];;not("AZI", "COM");not(null);<2;true;;;true;"SopralluogoPCE";
+"A&A";"ISA";"DE" ;[1000..8999];;"AF";;not(null);;;;;true;"SopralluogoPCE";
+"A&A";"ISA";"DE" ;[1000..8999];;"PO";;not(null);;;;;true;"SopralluogoPCE";
+"A&A";"ISA";"DE" ;[1000..8999];;"PE";;not(null);;;;;true;"SopralluogoPCE";
+;;;;;;;;;;;;;"Nessun Servizio";
+end date 11/04/2024 14:22:14
+start date 11/04/2024 14:28:41
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	RequestedAmount = 1
+	Reserve = 1
+	CESIPositive1500m = 1
+	ContractorType = 1
+	LossLocation = 1
+	NumberOfPreviousClaims = 1
+	AdministrativeRegularity = 1
+error: executeDmn error: Can't cast value to target type: Boolean. Value is: 1 of type String
+end date 11/04/2024 14:28:42
+start date 11/04/2024 18:13:16
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+testScenario not found
+imposto dati input generici  
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+	Company = 1
+	InsuranceCompany = 1
+	DamageType = 1
+	RequestedAmount = 1
+	Reserve = 1
+	CESIPositive1500m = 1
+	ContractorType = 1
+	LossLocation = 1
+	NumberOfPreviousClaims = 1
+	AdministrativeRegularity = 1
+error: executeDmn error: Can't cast value to target type: Boolean. Value is: 1 of type String
+end date 11/04/2024 18:13:18
+start date 11/04/2024 18:17:12
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+error: createDmn error: Object reference not set to an instance of an object.
+end date 11/04/2024 18:17:12
+start date 11/04/2024 18:17:25
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+start date 11/04/2024 18:22:55
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+error: createDmn error: Object reference not set to an instance of an object.
+end date 11/04/2024 18:22:56
+start date 11/04/2024 18:24:15
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+error: createDmn error: Object reference not set to an instance of an object.
+end date 11/04/2024 18:24:16
+start date 11/04/2024 18:24:24
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+error: createDmn error: Object reference not set to an instance of an object.
+end date 11/04/2024 18:24:25
+start date 11/04/2024 18:24:56
+processing ./dmn/test/Opening-triagePCE-008.dmn
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+inputList = 
+	Company
+	InsuranceCompany
+	DamageType
+	RequestedAmount
+	Reserve
+	CESIPositive1500m
+	ContractorType
+	LossLocation
+	NumberOfPreviousClaims
+	AdministrativeRegularity
+	Agency
+	InsuredItemType
+	InsuredPhones
+outputList = 
+	Scelta_servizio
+start date 11/04/2024 18:36:01
+processing ./dmn/test/Opening-triagePCE-008.dmn
+error: CheckDmnSyntax error: CreateDmnCtx error: Can't parse file ./dmn/test/Opening-triagePCE-008.dmn: There is an error in XML document (43, 59).
+end date 11/04/2024 18:36:02
+start date 11/04/2024 18:36:40
+processing ./dmn/test/Opening-triagePCE-008.dmn
+error: CheckDmnSyntax error: CreateDmnCtx error: Can't parse file ./dmn/test/Opening-triagePCE-008.dmn: There is an error in XML document (43, 59).
+end date 11/04/2024 18:36:41
+start date 11/04/2024 18:38:26
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+start date 11/04/2024 18:40:46
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+error: createDmn error: Object reference not set to an instance of an object.
+end date 11/04/2024 18:43:53
+start date 11/04/2024 19:01:46
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+start date 11/04/2024 19:03:54
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+end date 11/04/2024 19:07:44
+start date 11/04/2024 19:08:50
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+start date 11/04/2024 19:10:45
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+start date 11/04/2024 19:38:03
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+start date 11/04/2024 19:39:17
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+start date 11/04/2024 19:42:08
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+start date 11/04/2024 20:03:55
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+DMnObject: MyDmnEngine.DmnObject
+start date 11/04/2024 20:06:40
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+start date 11/04/2024 20:13:17
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+DMnObject: MyDmnEngine.DmnObject
+NewDMnObject: MyDmnEngine.DmnObject
+start date 11/04/2024 20:21:37
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+DMnObject: MyDmnEngine.DmnObject
+NewDMnObject: MyDmnEngine.DmnObject
+start date 11/04/2024 20:22:48
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+DMnObject: MyDmnEngine.DmnObject
+NewDMnObject: MyDmnEngine.DmnObject
+start date 11/04/2024 20:23:43
+processing ./dmn/test/Opening-triageSelfCare-002.dmn
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+inputList = 
+	Azienda
+	Compagnia
+	DannoTipo
+	AmmontareDanno
+	CESIpositivo1500m
+	ContraenteTipo
+	LuogoSinistro
+	UbicazioneDelRischio
+	TelefonoAssicurato
+	NumeroBeni
+	Agenzia
+	SelfCareEseguito
+outputList = 
+	Scelta_servizio
+DMnObject: MyDmnEngine.DmnObject
+NewDMnObject: MyDmnEngine.DmnObject
+NewDMnObject: MyDmnEngine.DmnObject
+NewDMnObject: MyDmnEngine.DmnObject
+end date 11/04/2024 20:26:19
